@@ -1,0 +1,1336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MindForge Ukraine — Code. Contracts. Compliance.</title>
+<meta name="description" content="MindForge Ukraine is a digital product studio with legal expertise: our own products and yours — LegalTech, web, SaaS and AI. Diia.City resident.">
+<link rel="canonical" href="https://mindforgeukraine.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MindForge Ukraine">
+<meta property="og:title" content="MindForge Ukraine — Code. Contracts. Compliance.">
+<meta property="og:description" content="Software, AI automation and LegalTech, with legal matters considered from the start. Diia.City resident.">
+<meta property="og:url" content="https://mindforgeukraine.com/">
+<meta property="og:image" content="https://mindforgeukraine.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Spectral:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"MindForge Ukraine LLC","alternateName":"ТОВ «МАЙНДФОРЖ УКРАЇНА»","url":"https://mindforgeukraine.com/","email":"projects@mindforgeukraine.com","taxID":"46090205","address":{"@type":"PostalAddress","streetAddress":"29 Yevhena Konovaltsia St.","addressLocality":"Kyiv","postalCode":"01133","addressCountry":"UA"},"sameAs":[]}
+</script>
+<style>
+.ua{color:inherit;font-weight:inherit}
+:root{
+  --night:#0E1A3A;      /* brand navy, hero and dark bands */
+  --night-2:#16244B;    /* raised surfaces on dark */
+  --ink:#101C3D;        /* headings on light */
+  --text:#2A3452;
+  --muted:#4A5472;
+  --paper:#F5F7FB;
+  --white:#F5F7FB;
+  --line:#DDE3EE;
+  --blue:#2864F5;       /* logo blue */
+  --blue-hi:#6E97FF;    /* blue on dark */
+  --bronze:#B08A55;     /* legal accent */
+  --on-dark:#C8D2EA;
+  --serif:"Spectral",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:"Onest",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue-hi);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+@media (max-width:600px){.wrap{padding:0 16px}}
+body.uk .en, body:not(.uk) .uk{display:none!important}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:inherit;font-weight:600;font-size:16px;padding:14px 22px;border-radius:10px;text-decoration:none;cursor:pointer;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:#1A4BC4}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;background:transparent}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-dark{background:var(--night);color:#fff}
+.btn-dark:hover{background:#1c2c5c}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:20;transition:background .25s,box-shadow .25s}
+header.solid{background:rgba(14,26,58,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.bar{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em;white-space:nowrap}
+.brand img{height:34px;width:auto;display:block}
+nav{margin-left:auto;display:flex;gap:26px}
+nav a{color:var(--on-dark);text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap}
+nav a:hover{color:#fff}
+.lang{display:flex;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--on-dark);padding:4px 10px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--night)}
+.bar .btn{padding:10px 16px;font-size:15px}
+.brand{flex-shrink:0}
+nav{gap:22px}
+@media (max-width:1180px){.bar{gap:18px}nav{gap:16px}nav a{font-size:14px}}
+@media (max-width:1040px){.bar .btn{display:none}}
+@media (max-width:900px){.bar{flex-wrap:wrap;height:auto;padding-block:10px;row-gap:4px}.lang{margin-left:auto}nav{display:flex;order:3;width:100%;margin-left:0;gap:20px;overflow-x:auto;padding:4px 0 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav::-webkit-scrollbar{display:none}header{background:rgba(14,26,58,.94)}}
+
+/* hero */
+.hero{position:relative;background:var(--night);color:#fff;overflow:hidden;padding:150px 0 110px}
+.net{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;display:block}
+@media (max-width:900px){.net{opacity:.35}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hero-inner{position:relative;max-width:760px}
+.hero h1{font-size:clamp(44px,7.4vw,92px);line-height:.98;letter-spacing:-.035em;margin:0 0 28px;font-weight:800}
+.hero h1 span.line{display:block}
+.hero h1 .legal{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.01em;color:#E9D8BC}
+.hero::before{content:"";position:absolute;right:-12%;top:-30%;width:70%;height:140%;background:radial-gradient(closest-side,rgba(40,100,245,.28),rgba(40,100,245,0));pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night) 30%,rgba(14,26,58,.6) 55%,rgba(14,26,58,0) 80%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero .lead{font-size:clamp(18px,2vw,21px);color:var(--on-dark);max-width:33em;margin:0 0 36px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hook{margin:14px 0 0;font-size:15px;color:#E9D8BC}
+.spec-link{display:inline-block;margin-top:16px;color:var(--on-dark);font-size:15px;font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(200,210,234,.4)}
+.spec-link:hover{color:#fff;text-decoration-color:#fff}
+.creds{display:flex;flex-wrap:wrap;margin:40px 0 0;border-left:2px solid var(--bronze)}
+.cred{padding:2px 32px 2px 20px}
+.cred+.cred{border-left:1px solid rgba(255,255,255,.14)}
+.cred-k{display:block;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--bronze)}
+.cred-v{display:block;font-size:17px;font-weight:700;color:#fff;margin-top:4px}
+@media (max-width:600px){.creds{flex-direction:column;gap:16px}.cred+.cred{border-left:0}}
+@media (max-width:900px){.hero{padding-top:150px}}
+@media (max-width:600px){.hero{padding:150px 0 80px}}
+
+/* section scaffolding */
+section{padding:64px 0}
+@media (max-width:600px){section{padding:44px 0}}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.025em;margin:0 0 16px;color:var(--ink);font-weight:800}
+.sub{font-size:18px;color:var(--muted);max-width:36em;margin:0 0 32px}
+.dark{background:var(--night);color:#fff}
+.dark h2{color:#fff}
+.dark .sub{color:var(--on-dark)}
+
+/* facts strip */
+
+.facts{background:var(--paper);padding:8px 0 24px}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.facts .wrap > div{padding:30px 32px 32px;border-left:1px solid rgba(255,255,255,.1);border-top:1px solid rgba(176,138,85,.45);border-bottom:1px solid rgba(176,138,85,.45)}
+.facts .wrap > div:first-child{border-left:0;padding-left:0}
+.facts .wrap > div > span{display:block}
+.facts .fk{font-size:12px!important;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze)!important;margin-bottom:14px}
+.facts b{display:block;font-family:var(--serif);font-weight:400;font-size:68px;line-height:1;letter-spacing:-.02em;color:#fff}
+.facts b i{font-style:normal;color:var(--bronze);margin-left:2px}
+.facts b span{font:inherit!important;color:inherit!important}
+.facts .fl{margin-top:14px;font-size:16px!important;font-weight:600;color:#fff!important}
+.facts .fs{margin-top:6px;font-family:var(--serif);font-style:italic;font-size:16.5px!important;line-height:1.45;color:#E9D8BC!important;max-width:32ch}
+.facts .fk span,.facts .fs span,.facts .fl span{font:inherit!important;color:inherit!important;letter-spacing:inherit}
+@media (max-width:760px){.facts .wrap{grid-template-columns:1fr}.facts .wrap > div{border-left:0;padding:24px 0;border-top:1px solid rgba(255,255,255,.1);border-bottom:0}.facts .wrap > div:first-child{border-top:1px solid rgba(176,138,85,.45)}.facts .wrap > div:last-child{border-bottom:1px solid rgba(176,138,85,.45)}.facts b{font-size:56px}}
+
+/* services: expandable tiles */
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:stretch}
+.tile{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.tile:hover{border-color:#b9c7e6}
+.tile.focus{border:1.5px solid var(--bronze);grid-column:1/-1}
+.tiles{grid-template-columns:repeat(3,1fr)!important}
+.tile.focus .body > div{display:grid;grid-template-columns:1.2fr 1fr;gap:4px 24px;align-items:start}
+.tile.focus .body > div a{grid-column:1}
+.tile:not(.focus) .body p,.tile:not(.focus) .body ul,.tile:not(.focus) .body a{margin-left:26px}
+.role{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin-bottom:2px}
+.tile.focus .role{color:var(--bronze)}
+.together{margin:18px 0 0;padding:16px 20px;border-radius:14px;background:var(--white);border:1px dashed #b9c7e6;color:var(--ink);font-weight:600;font-size:16px}
+@media (max-width:980px){.tiles{grid-template-columns:1fr 1fr!important}.tile.focus .body > div{display:block}}
+@media (max-width:640px){.tiles{grid-template-columns:1fr!important}}
+.tile .head{box-sizing:border-box;width:100%;display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:center;padding:26px 26px}
+.tile button.head:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;border-radius:16px}
+.ico{width:52px;height:52px;border-radius:12px;background:#EEF3FF;display:grid;place-items:center}
+.tile.focus .ico{background:#F6EEE2}
+.tile h3{margin:0;font-size:20px;color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+.tile .hint{display:block;font-size:15.5px;color:var(--text);font-weight:500;margin-top:3px}
+.tile .flag{display:inline-block;font-size:12px;font-weight:700;color:var(--bronze);border:1px solid var(--bronze);border-radius:999px;padding:1px 8px;margin-left:8px;vertical-align:middle}
+.plus{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);position:relative;transition:transform .25s,border-color .2s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.8px;background:var(--ink);transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.tile.open .plus{transform:rotate(45deg);border-color:var(--blue)}
+.body{display:block}
+.tile.open .body{grid-template-rows:1fr}
+.body > div{overflow:hidden}
+.body p{margin:0 26px 14px 96px;color:var(--text);font-size:16px}
+.body ul{margin:0 26px 18px 96px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.body li{font-size:13.5px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.body a{display:inline-block;margin:0 26px 24px 96px;font-weight:700;color:var(--blue);text-decoration:none}
+.body a:hover{text-decoration:underline}
+@media (max-width:820px){.tiles{grid-template-columns:1fr}.body p,.body ul,.body a{margin-left:26px}}
+
+/* global */
+/* legal built in */
+.eyebrow-b{display:block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);margin-bottom:12px}
+#legal h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:#E9D8BC}
+.agree{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(176,138,85,.45);border-bottom:1px solid rgba(176,138,85,.45)}
+.agree article{padding:32px 32px 30px;border-left:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column}
+.agree article:first-child{border-left:0;padding-left:0}
+.agree .an{display:block;font-family:var(--serif);font-size:44px;line-height:1;color:var(--bronze);margin-bottom:18px}
+.agree h3{margin:0 0 10px;font-size:22px;color:#fff;letter-spacing:-.01em}
+.agree p{margin:0 0 18px;color:var(--on-dark);font-size:16px;flex:1}
+.agree .af{font-family:var(--serif);font-style:italic;font-size:16px;color:#E9D8BC;padding-top:14px;border-top:1px solid rgba(255,255,255,.08)}
+@media (max-width:820px){.agree{grid-template-columns:1fr}.agree article{border-left:0;padding:26px 0;border-top:1px solid rgba(255,255,255,.1)}.agree article:first-child{border-top:0}}
+@media (max-width:820px){.agree{grid-template-columns:1fr}}
+.legal-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.sheet{background:var(--white);color:var(--text);border-radius:10px;padding:34px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6);position:relative}
+.sheet-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:8px}
+.sheet-top b{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--ink)}
+.sheet-top > span{font-size:13px;color:var(--muted)}
+.clause{all:unset;box-sizing:border-box;display:grid;grid-template-columns:40px 1fr;gap:4px 8px;width:100%;padding:16px 0;border-bottom:1px dashed var(--line);cursor:pointer}
+.clause:last-of-type{border-bottom:0}
+.clause .n{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--bronze)}
+.clause strong{font-size:17px;color:var(--ink)}
+.clause em{grid-column:2;font-style:normal;color:var(--muted);font-size:15px;display:none}
+.clause[aria-expanded="true"] em{display:block}
+.clause:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:6px}
+.seal{position:absolute;right:-18px;bottom:-22px;width:96px;height:96px;border-radius:50%;border:2px solid var(--bronze);color:var(--bronze);display:grid;place-items:center;text-align:center;font-size:11px;font-weight:800;line-height:1.25;background:var(--night);transform:rotate(-12deg)}
+.legal-copy .points{list-style:none;padding:0;margin:0 0 32px}
+.legal-copy .points li{padding:12px 0 12px 30px;position:relative;color:var(--on-dark);border-bottom:1px solid rgba(255,255,255,.1)}
+.legal-copy .points li::before{content:"";position:absolute;left:2px;top:22px;width:14px;height:2px;background:var(--bronze)}
+@media (max-width:900px){.legal-grid{grid-template-columns:1fr}.seal{right:8px}}
+
+/* product */
+.product{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;background:var(--night);border-radius:22px;padding:56px;color:#fff;position:relative;overflow:hidden}
+.product::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;border:1px solid rgba(176,138,85,.35)}
+.product .chy{height:52px;width:auto;display:block;margin:0 0 20px}
+.pill{display:inline-block;font-size:12.5px;font-weight:700;color:var(--bronze);border:1px solid var(--bronze);border-radius:999px;padding:2px 10px;margin-bottom:18px}
+.product p{color:var(--on-dark);margin:0 0 28px;max-width:30em}
+.light{background:var(--night-2);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px;position:relative;z-index:1}
+.light-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:15px;color:var(--on-dark)}
+.light-row:last-child{border-bottom:0}
+.dot{width:12px;height:12px;border-radius:50%}
+.g{background:#3FB37F}.y{background:#E9B949}.r{background:#E5604D}
+.light-cap{font-size:13px;color:#8fa0c8;margin:0 0 6px}
+.chy-h{font-size:clamp(26px,3vw,34px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px;color:#fff;font-weight:800}
+.chy-h em{font-family:var(--serif);font-style:italic;font-weight:500;color:#E9D8BC}
+.chy-v{list-style:none;padding:0;margin:-6px 0 28px;display:grid;gap:10px}
+.chy-v li{display:flex;align-items:center;gap:12px;color:#fff;font-weight:600;font-size:16px}
+.chy-v i{font-style:normal;font-family:var(--serif);font-size:15px;color:var(--bronze);border:1px solid rgba(176,138,85,.5);border-radius:999px;width:34px;height:34px;display:grid;place-items:center;flex:none}
+.dash{position:relative;z-index:1;background:linear-gradient(160deg,#1B2B5C 0%,#13204A 100%);border:1px solid rgba(110,151,255,.28);border-radius:18px;padding:22px 22px 16px;box-shadow:0 40px 80px -40px rgba(0,0,0,.7),0 0 0 6px rgba(110,151,255,.04)}
+.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.dash-t{font-weight:700;color:#fff;font-size:14.5px;letter-spacing:.02em}.dash-t b{color:var(--bronze)}
+.dash-ok{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;color:#7FE0B0;background:rgba(63,179,127,.14);border-radius:999px;padding:4px 10px}
+.dash-ok i{width:7px;height:7px;border-radius:50%;background:#3FB37F;box-shadow:0 0 8px #3FB37F}
+.dash-mid{display:flex;align-items:center;gap:20px;padding:6px 0 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.ring{width:96px;height:96px;flex:none;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:10}
+.ring .rb{stroke:rgba(255,255,255,.08)}
+.ring .rf{stroke:url(#none);stroke:#3FB37F;stroke-linecap:round;stroke-dasharray:314;stroke-dashoffset:79;filter:drop-shadow(0 0 6px rgba(63,179,127,.5))}
+.dash-kpi span{display:block}
+.dash-kpi .k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8fa0c8}
+.dash-kpi .v{font-size:24px;font-weight:800;color:#fff;margin:2px 0}
+.dash-kpi .s{font-size:14px;color:var(--on-dark)}
+.dash-kpi .k span,.dash-kpi .v span,.dash-kpi .s span{display:inline}
+.dash-rows{padding:12px 0 6px;filter:blur(1.2px)}
+.dr{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.dr:last-child{border-bottom:0}
+.dr .bar{height:9px;border-radius:6px;background:linear-gradient(90deg,rgba(200,210,234,.35),rgba(200,210,234,.12))}
+.dash-lock{display:flex;align-items:center;justify-content:center;gap:8px;margin:8px 0 6px;padding:10px;border-radius:10px;border:1px dashed rgba(176,138,85,.55);color:#E9D8BC;font-size:14px;font-weight:600}
+.dash-cap{margin:10px 0 0!important;font-size:12.5px!important;line-height:1.45;color:#8fa0c8!important;text-align:left;max-width:none!important}
+#product .road-cap{margin-top:14px}
+@media (max-width:900px){.product{grid-template-columns:1fr;padding:32px 22px}}
+
+/* process */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font-weight:800;color:var(--blue);font-size:14px;margin-bottom:10px;letter-spacing:.04em}
+.steps b{display:block;color:var(--ink);font-size:18px;margin-bottom:4px}
+.steps li > span{color:var(--text);font-size:16px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* brief builder */
+.brief{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+.builder{background:var(--night-2);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:30px}
+.q{margin:0 0 22px}
+.q p{margin:0 0 10px;font-weight:600;color:#fff;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:14px;font-weight:600;color:var(--on-dark);background:transparent;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 14px;cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#fff;color:#fff}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fld{display:block;margin:0 0 16px}
+.fld > span{display:block;font-weight:600;color:#fff;font-size:15px;margin-bottom:6px}
+.builder input{width:100%;font:inherit;font-size:15px;color:#fff;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:11px 12px}
+.q p em{font-style:normal;font-weight:400;color:#8fa0c8;font-size:13px}
+@media (max-width:560px){.row2{grid-template-columns:1fr}}
+.builder textarea{width:100%;min-height:84px;resize:vertical;font:inherit;font-size:15px;color:#fff;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:12px}
+.builder textarea::placeholder{color:#8fa0c8}
+.builder .btn{width:100%;justify-content:center;margin-top:8px}
+.note{font-size:13px;color:#8fa0c8;margin:12px 0 0}
+.note a{color:#C8D2EA}
+.fstatus{margin:14px 0 0;padding:12px 14px;border-radius:10px;font-size:15px;font-weight:500}
+.fstatus.ok{background:rgba(63,179,127,.14);border:1px solid rgba(63,179,127,.5);color:#B9F0D5}
+.fstatus.err{background:rgba(229,96,77,.12);border:1px solid rgba(229,96,77,.5);color:#FFD2CB}
+.fstatus .diag{display:block;margin-top:6px;font-size:12px;opacity:.75;font-weight:400}
+.fstatus.wait{background:rgba(110,151,255,.12);border:1px solid rgba(110,151,255,.4);color:#DCE6FF}
+#send.busy{opacity:.7;cursor:progress}
+.out{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12)}
+.out-k{margin:0 0 10px;color:var(--on-dark);font-size:14.5px}
+.out-k b{color:#fff;user-select:all}
+.out textarea{min-height:170px;font-size:14px}
+.out-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.out-actions .btn{width:auto;margin-top:0}
+.contact-lines{margin-top:28px;font-size:15px;color:var(--on-dark);line-height:1.8}
+.contact-lines a{color:#fff;font-weight:600}
+.mail-k{margin:0 0 6px;font-size:14px;color:#8fa0c8}
+.mail-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.mail-big{font-size:clamp(15px,4.6vw,26px);font-weight:700;color:#fff;user-select:all;white-space:nowrap;letter-spacing:-.01em}
+.copy{font:inherit;font-size:13px;font-weight:600;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:6px 12px;cursor:pointer}
+.copy:hover{border-color:#fff}
+.reqs{margin-top:24px;padding-left:16px;border-left:2px solid var(--bronze);font-size:14px;line-height:1.7}
+.reqs b{display:block;color:#fff}
+@media (max-width:900px){.brief{grid-template-columns:1fr}}
+
+/* careers */
+.careers{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:34px 36px}
+.careers h3{margin:0 0 6px;font-size:24px;color:var(--ink);letter-spacing:-.01em}
+.careers p{margin:0;color:var(--muted)}
+
+.sticky-cta{display:none}
+@media (max-width:900px){.sticky-cta{display:flex;justify-content:center;position:fixed;left:16px;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 30px rgba(14,26,58,.35);opacity:0;transform:translateY(20px);transition:opacity .25s,transform .25s;pointer-events:none}.sticky-cta.show{opacity:1;transform:none;pointer-events:auto}}
+
+/* platform board (PCB) */
+.board-sec{background:radial-gradient(1200px 500px at 30% 40%,#16285a 0%,var(--night) 60%)}
+.eco{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:stretch}
+.board{background:#0B1531;border:1px solid rgba(110,151,255,.18);border-radius:20px;padding:10px;box-shadow:inset 0 0 80px rgba(40,100,245,.08)}
+#board{width:100%;height:auto;display:block}
+#board .grid{stroke:rgba(110,151,255,.07);stroke-width:1;fill:none}
+#board .trace{fill:none;stroke:rgba(110,151,255,.28);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round;transition:stroke .25s,stroke-width .25s,opacity .25s}
+#board .trace.l{stroke:rgba(176,138,85,.35)}
+#board .trace.on{stroke:#6E97FF;stroke-width:3.2;filter:url(#glow)}
+#board .trace.l.on{stroke:#D4AE72}
+#board.dim .trace:not(.on){opacity:.7}
+#board .via{fill:#0B1531;stroke:rgba(110,151,255,.5);stroke-width:1.6}
+#board .chip rect.body{fill:#101E46;stroke:#6E97FF;stroke-width:1.6}
+#board .chip .pin{fill:#6E97FF;opacity:.7}
+#board .chip text{fill:#fff;font:800 17px "Onest",system-ui,sans-serif;text-anchor:middle}
+#board .chip text.s{font:400 13px "Onest",system-ui,sans-serif;fill:#C8D2EA}
+#board .pad{cursor:pointer}
+#board .pad rect{fill:#0F1C43;stroke:#6E97FF;stroke-width:2;transition:fill .2s,stroke-width .2s}
+#board .pad.l rect{stroke:#B08A55}
+#board .pad:hover rect{fill:#16285A}
+#board .pad.active rect{fill:#1A2E66;stroke-width:3}
+#board .pad.l.active rect{fill:#3a2e1c}
+#board .pad text{fill:#fff;font:600 13.5px "Onest",system-ui,sans-serif;text-anchor:middle;pointer-events:none}
+#board .pad .dotp{fill:#6E97FF}
+#board .pad.l .dotp{fill:#B08A55}
+#board .star{fill:#DCE6FF;opacity:.55}
+#board .orbit{fill:none;stroke:rgba(110,151,255,.3);stroke-width:1.1;stroke-dasharray:2 6}
+#board .planet{fill:#9DB8FF;filter:url(#glow)}
+#board .planet.l{fill:#E2C08A}
+#board .chalo{fill:none;stroke:#6E97FF;stroke-width:2;filter:url(#glow);opacity:.5}
+#board .chip rect.body{filter:url(#glow)}
+#board .pad rect{filter:drop-shadow(0 0 6px rgba(110,151,255,.35))}
+#board .pad.l rect{filter:drop-shadow(0 0 6px rgba(176,138,85,.4))}
+#board .pad.active rect{filter:drop-shadow(0 0 12px rgba(110,151,255,.7))}
+#board .pad.l.active rect{filter:drop-shadow(0 0 12px rgba(212,174,114,.7))}
+#board .pad:focus{outline:none}
+#board .pad:focus-visible rect{stroke-width:4}
+#board .sig{fill:#BFD0FF;filter:url(#glow)}
+#board .sig.l{fill:#F0D3A2}
+.eco-panel{background:#fff;color:var(--text);border-radius:20px;padding:32px;display:flex;flex-direction:column;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.board{align-self:center}
+.gets-k,.links-k{margin:6px 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.gets{list-style:none;padding:0;margin:0 0 22px}
+.gets li{position:relative;padding:7px 0 7px 28px;color:var(--ink);font-weight:500;border-bottom:1px solid var(--line)}
+.gets li:last-child{border-bottom:0}
+.gets li::before{content:"";position:absolute;left:2px;top:13px;width:12px;height:7px;border-left:2.4px solid var(--blue);border-bottom:2.4px solid var(--blue);transform:rotate(-45deg)}
+#ecoCta{align-self:flex-start;margin-bottom:22px}
+.links-k{margin-top:auto}
+.eco-panel .k{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bronze);margin:0 0 8px}
+.eco-panel h3{margin:0 0 10px;font-size:30px;line-height:1.15;color:var(--ink);letter-spacing:-.02em}
+.eco-panel p{margin:0 0 18px;color:var(--text);font-size:16.5px}
+.eco-panel .links{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.eco-panel .links li{font-size:13.5px;font-weight:600;color:var(--blue);background:#EEF3FF;border-radius:999px;padding:4px 12px}
+.eco-list{display:none}
+@media (max-width:900px){.dk{display:none}}
+@media (max-width:900px){.eco{grid-template-columns:1fr}.board,.eco-panel{display:none}.eco-list{display:grid;gap:12px}.eco-list article{background:#fff;border-radius:14px;padding:20px}.eco-list .k{margin:0 0 4px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bronze)}.eco-list h3{margin:0 0 6px;font-size:20px;color:var(--ink)}.eco-list p{margin:0 0 8px;color:var(--text);font-size:15.5px}.eco-list ul{margin:0 0 14px;padding-left:18px;color:var(--ink);font-size:15px}.eco-list .btn{width:100%;justify-content:center}}
+@media (prefers-reduced-motion:reduce){#board .sig{display:none}}
+
+/* process as a connected chain */
+.chain{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+.chain::before{content:"";position:absolute;left:16px;right:16px;top:15px;height:2px;background:linear-gradient(90deg,var(--blue),var(--bronze))}
+.chain li{position:relative;padding:48px 20px 0 0}
+.chain li::before{content:"";position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--white);border:2.5px solid var(--blue);box-sizing:border-box}
+.chain li:nth-child(3)::before{border-color:var(--bronze)}
+@media (max-width:1100px) and (min-width:761px){.chain{grid-template-columns:repeat(3,1fr);row-gap:28px}.chain::before{display:none}}
+.chain li::after{content:"";position:absolute;left:11px;top:11px;width:10px;height:10px;border-radius:50%;background:var(--blue)}
+.chain li:nth-child(3)::after{background:var(--bronze)}
+.chain b{display:block;color:var(--ink);font-size:19px;margin-bottom:4px}
+.chain li > span{color:var(--text);font-size:16px}
+@media (max-width:760px){.chain{grid-template-columns:1fr;gap:28px}.chain::before{left:15px;right:auto;top:16px;bottom:16px;width:2px;height:auto;background:linear-gradient(180deg,var(--blue),var(--bronze))}.chain li{padding:0 0 0 52px}}
+
+/* CHYNNO roadmap */
+.has{list-style:none;padding:0;margin:-12px 0 24px;color:#E9D8BC;font-size:15px}
+.road{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:0;position:relative;z-index:1}
+.road .m{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--on-dark);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 14px;background:rgba(255,255,255,.03)}
+.road .m.now{color:#fff;border-color:var(--bronze);background:rgba(176,138,85,.14)}
+.road .m i{width:8px;height:8px;border-radius:50%;background:#7f8fb6;display:block}
+.road .m.now i{background:var(--bronze)}
+.road .wire{width:26px;height:2px;background:rgba(255,255,255,.22)}
+.road-cap{margin:12px 0 0;font-size:13px;color:#8fa0c8;position:relative;z-index:1}
+@media (max-width:620px){.road{gap:8px}.road .wire{display:none}}
+
+
+/* ticker */
+.ticker{background:var(--white);border-bottom:1px solid var(--line);overflow:hidden;padding:0}
+.ticker-track{display:flex;gap:44px;width:max-content;padding:18px 0;animation:tick 38s linear infinite}
+.ticker span{display:flex;align-items:center;gap:44px;font-weight:700;font-size:17px;color:var(--ink);white-space:nowrap}
+.ticker span::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.ticker span.l::after{background:var(--bronze)}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none;flex-wrap:wrap;width:auto;padding-left:24px}}
+
+/* why us */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.why article{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px;position:relative;overflow:hidden}
+.why article.star{background:var(--night);border-color:var(--night);color:#fff}
+.why .wi{width:46px;height:46px;border-radius:12px;background:#EEF3FF;display:grid;place-items:center;margin-bottom:16px}
+.why article.star .wi{background:rgba(176,138,85,.18)}
+.wcard{cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s}
+.wcard:hover{border-color:#b9c7e6;box-shadow:0 18px 40px -24px rgba(16,28,61,.35);transform:translateY(-2px)}
+.wcard.star:hover{border-color:var(--bronze)}
+.wcard:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wplus{position:absolute;right:22px;top:26px;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);transition:transform .25s,border-color .2s}
+.wcard.star .wplus{border-color:rgba(255,255,255,.3)}
+.wplus::before,.wplus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.8px;background:var(--ink);transform:translate(-50%,-50%)}
+.wcard.star .wplus::before,.wcard.star .wplus::after{background:#fff}
+.wplus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.wcard.open .wplus{transform:rotate(45deg);border-color:var(--blue)}
+.wmore{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.wcard.open .wmore{grid-template-rows:1fr}
+.wmore > div{overflow:hidden}
+.wmore p{margin:14px 0 10px!important;padding-top:14px;border-top:1px solid var(--line)}
+.wcard.star .wmore p{border-color:rgba(255,255,255,.15)}
+.wmore a{font-weight:700;color:var(--blue);text-decoration:none}
+.wcard.star .wmore a{color:#D4AE72}
+.why h3{margin:0 0 8px;font-size:20px;color:var(--ink);letter-spacing:-.01em}
+.why article.star h3{color:#fff}
+.why p{margin:0;font-size:16.5px;line-height:1.55;color:var(--text)}
+.why article.star p{color:var(--on-dark)}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+
+/* promo band */
+.promo{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(110deg,var(--blue) 0%,#1A3FB0 60%,var(--night) 100%);border-radius:22px;padding:40px 44px;color:#fff;position:relative;overflow:hidden}
+.promo::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:1.5px solid rgba(255,255,255,.18)}
+.promo h3{margin:0 0 6px;font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;line-height:1.15}
+.promo p{margin:0;color:#DCE6FF;max-width:34em}
+.promo .btn{background:#fff;color:var(--night);position:relative;z-index:1}
+.promo .btn:hover{background:#E7EEFF}
+@media (max-width:600px){.promo{padding:28px 22px}}
+
+.careers-sec{padding:0 0 8px}
+.careers-sec .careers{background:var(--night-2);border-color:rgba(255,255,255,.1)}
+.careers-sec .careers h3{color:#fff}
+.careers-sec .careers p{color:var(--on-dark)}
+.careers-sec .btn-dark{background:#fff;color:var(--night)}
+.careers-sec .btn-dark:hover{background:#E7EEFF}
+#start{padding-bottom:40px}
+.prod-sec{background:radial-gradient(900px 420px at 85% 30%,#1b2f66 0%,var(--night) 60%)}
+.prod-sec .product{background:transparent;padding:0;border-radius:0}
+.prod-sec .product::after{display:none}
+
+/* ===== print: whole site, every section, all pages ===== */
+@media print{
+  @page{size:A4;margin:12mm}
+  html,body{background:#0E1A3A!important}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;animation:none!important;transition:none!important}
+  header{position:static!important;background:var(--night)!important;box-shadow:none!important}
+  .sticky-cta,.lang,.bar .btn,#heroNet,.copy,#copyMail,.out-actions,.builder,.ctas .btn-ghost{display:none!important}
+  .hero{padding:24px 0 32px!important}
+  section{padding:24px 0!important;break-inside:auto}
+  article,.tile,.agree article,.chain li,.product,.promo,.careers,.f-cta,.eco-panel{break-inside:avoid}
+  h2,h3{break-after:avoid}
+  .wmore{grid-template-rows:1fr!important}
+  .board-sec .board{display:block!important}.eco-panel{display:none!important}
+  .eco-list{display:grid!important;grid-template-columns:1fr 1fr;gap:10px}
+  .eco-list article{background:var(--white)!important}
+  .print-only{display:block!important}
+  a[href^="#"]{text-decoration:none}
+  #printPages{break-before:page}
+}
+.print-only{display:none}
+#printPages{background:#fff;color:#2A3452;padding:24px}
+#printPages article.pp{break-before:page}
+#printPages h1{color:#101C3D;font-size:26px}#printPages h2{color:#101C3D;font-size:18px;margin:18px 0 6px}
+#printPages table{width:100%;border-collapse:collapse}#printPages th,#printPages td{text-align:left;border-bottom:1px solid #DDE3EE;padding:6px 0;vertical-align:top}
+
+/* footer */
+footer{background:var(--night);color:var(--on-dark);padding:48px 0 24px;font-size:14.5px}
+.foot{display:grid;grid-template-columns:1.2fr .9fr 1.1fr;gap:36px;align-items:start}
+.f-brand p{margin:12px 0 14px;max-width:24em}
+.f-brand .brand{margin:0}
+.social{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:600;text-decoration:none}
+.f-nav{display:flex;flex-direction:column;gap:10px;margin:0}
+.f-nav a{color:var(--on-dark);text-decoration:none;font-size:15px}
+.f-nav a:hover,.f-legal a:hover,.f-bottom a:hover{color:#fff}
+.f-cta{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px}
+.f-cta-h{margin:0 0 6px;font-size:19px;font-weight:700;color:#fff}
+.f-mail{display:block;color:#fff;font-weight:600;margin:0 0 14px;user-select:all;white-space:nowrap;font-size:clamp(14px,3.9vw,16px)}
+.f-legal{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:32px;padding-top:18px;position:relative;font-size:13.5px;color:#8fa0c8}
+.f-legal a{color:#C8D2EA}
+.f-legal::before{content:"";position:absolute;top:0;left:max(16px,24px);right:max(16px,24px);height:1px;background:rgba(255,255,255,.1)}
+@media (max-width:600px){.f-legal::before{left:16px;right:16px}}
+.f-bottom{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:10px;font-size:13.5px;color:#8fa0c8}
+.f-bottom a{color:#8fa0c8;text-decoration:none}
+@media (max-width:820px){.foot{grid-template-columns:1fr;gap:26px}}
+
+@media (max-width:600px){nav{justify-content:space-between;gap:8px}nav a{font-size:13.5px}}
+@media (max-width:380px){nav a{font-size:12.5px}}
+.goal-q{margin-top:0}
+.goal-q .chips .chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.gx[hidden]{display:none!important}
+.fld em{font-style:normal;font-weight:400;color:#8fa0c8;font-size:13px}
+
+/* map: Big Law */
+.globe-sec{padding-block:64px;background:var(--night);overflow:hidden}
+#global h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:#E9D8BC}
+.globe{position:relative;margin:8px 0 0;border-top:1px solid rgba(176,138,85,.45);border-bottom:1px solid rgba(255,255,255,.08);padding:18px 0}
+#globeMap{display:block;width:100%;height:auto;max-width:980px;margin:0 auto}
+#globeMap .dot{fill:rgba(233,216,188,.07)}
+#globeMap .arc{fill:none;stroke:rgba(233,216,188,.32);stroke-width:1;transition:opacity .3s,stroke .3s}
+#globeMap .city circle.halo{fill:transparent;stroke:rgba(233,216,188,.18);stroke-width:1}
+#globeMap .city circle.core{fill:var(--night);stroke:#E9D8BC;stroke-width:1.5}
+#globeMap .city.hub circle.core{fill:var(--bronze);stroke:var(--bronze)}
+#globeMap .city.hub circle.halo{stroke:rgba(176,138,85,.5)}
+#globeMap text{fill:#fff;font:500 17px "Spectral",Georgia,serif}
+#globeMap text.c{fill:#8fa0c8;font:600 10.5px "Onest",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+#globeMap .city{cursor:pointer;outline:none}
+#globeMap .city .hit{fill:transparent}
+#globeMap .city:hover circle.core,#globeMap .city:focus-visible circle.core{stroke:#fff}
+#globeMap .city.sel circle.core{fill:var(--bronze);stroke:#F0D3A2}
+#globeMap .city.sel circle.halo{stroke:#D4AE72}
+#globeMap .city.sel text{fill:#F0D3A2}
+#globeMap.picked .arc{opacity:.25}
+#globeMap.picked .arc.on{opacity:1;stroke:#D4AE72;stroke-width:1.6}
+#globeMap .pulse{fill:#F0D3A2;filter:drop-shadow(0 0 6px #D4AE72)}
+.geo-card{position:absolute;left:0;top:18px;z-index:2;width:min(300px,100%);background:var(--night);border-top:2px solid var(--bronze);border-bottom:1px solid rgba(255,255,255,.1);padding:14px 16px 12px 0}
+.geo-card .gc-k{margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze)}
+.geo-card .gc-h{margin:0 0 8px;font-family:var(--serif);font-size:22px;font-weight:500;color:#fff;padding-right:24px;line-height:1.2}
+.geo-card ul{list-style:none;margin:0 0 10px;padding:0;color:var(--on-dark);font-size:14px;line-height:1.45}
+.geo-card li{padding:5px 0;border-top:1px solid rgba(255,255,255,.07)}
+.geo-card .gc-a{font-family:var(--serif);font-style:italic;font-size:15.5px;color:#E9D8BC;text-decoration:none}
+.geo-card .gc-a:hover{text-decoration:underline}
+.geo-card .gc-x{position:absolute;right:-6px;top:6px;width:30px;height:30px;border:0;background:none;color:#8fa0c8;font-size:22px;line-height:1;cursor:pointer}
+.geo-card .gc-x:hover{color:#fff}
+.jur{display:none!important;grid-template-columns:repeat(3,1fr);list-style:none;padding:0;margin:0;border-bottom:1px solid rgba(176,138,85,.45)}
+.jur li{border:0!important;padding:0!important;border-top:1px solid rgba(255,255,255,.08)!important}
+.jur li:nth-child(-n+3){border-top:0!important}
+.jur button{display:flex;align-items:baseline;justify-content:space-between;gap:12px;width:100%;font:inherit;background:none;border:0;padding:14px 18px 14px 0;cursor:pointer;text-align:left;color:#fff}
+.jur .jc{font-family:var(--serif);font-size:19px}
+.jur .jn{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8fa0c8}
+.jur button:hover .jc,.jur button[aria-pressed="true"] .jc{color:#F0D3A2}
+.jur button[aria-pressed="true"] .jn{color:var(--bronze)}
+.geo-cap{margin:14px 0 0;font-family:var(--serif);font-style:italic;font-size:15px;color:#8fa0c8}
+@media (max-width:1000px){.globe{display:flex;flex-direction:column}.geo-card{position:relative;width:auto;margin:12px 0 0;order:2;padding-right:0}.geo-card .gc-x{right:0}}
+@media (max-width:700px){#globeMap text{display:none}.jur{display:grid!important;grid-template-columns:1fr 1fr}.jur li:nth-child(3){border-top:1px solid rgba(255,255,255,.08)!important}.jur .jc{font-size:17px}.jur button{flex-direction:column;gap:2px;padding:12px 10px 12px 0}}
+.eco-panel .links button{font:inherit;font-size:13.5px;font-weight:600;color:var(--blue-hi);background:none;border:0;padding:0;cursor:pointer}
+.eco-panel .links li{cursor:pointer;transition:background .2s}
+.eco-panel .links li:hover{background:rgba(110,151,255,.28)}
+.eco-panel .links button::after{content:" →";opacity:.6}
+#board .chip,#board .chalo{transform-box:fill-box;transform-origin:center}
+#board .chip.beat{animation:mfBeat 1s ease-out}
+#board .chalo{opacity:.35}
+#board .chalo.beat{animation:mfGlow 1.1s ease-out}
+@keyframes mfBeat{0%{transform:scale(1)}12%{transform:scale(1.07)}24%{transform:scale(.995)}36%{transform:scale(1.045)}60%,100%{transform:scale(1)}}
+@keyframes mfGlow{0%{opacity:.35;transform:scale(1)}12%{opacity:1;transform:scale(1.09)}24%{opacity:.5;transform:scale(1)}36%{opacity:.9;transform:scale(1.06)}100%{opacity:.35;transform:scale(1)}}
+#board .ripple{fill:none;stroke:#6E97FF;stroke-width:2;transform-box:fill-box;transform-origin:center;animation:mfRipple 1.4s ease-out forwards;filter:url(#glow)}
+@keyframes mfRipple{0%{opacity:.85;transform:scale(1)}100%{opacity:0;transform:scale(1.55)}}
+#board .chip.beat rect.body{stroke:#9DB8FF;stroke-width:2.2}
+@media (prefers-reduced-motion:reduce){#board .chip.beat,#board .chalo.beat{animation:none}#board .chalo{opacity:.6}}
+#board .chip rect.body{fill:url(#chipFill);stroke:#C9D8FF;stroke-width:2}
+#board .chip text{fill:#fff}
+#board .chip text.s{fill:#DCE6FF}
+#board .chip .pin{fill:#BFD0FF;opacity:.9}
+#board .chalo{stroke:#9DB8FF}
+#board .corelight{transform-box:fill-box;transform-origin:center;opacity:.85}
+#board .corelight.beat{animation:mfCore 1s ease-out}
+@keyframes mfCore{0%{opacity:.85;transform:scale(1)}12%{opacity:1;transform:scale(1.08)}24%{opacity:.85;transform:scale(1)}36%{opacity:1;transform:scale(1.05)}100%{opacity:.85;transform:scale(1)}}
+#board .pad rect{fill:#0D1A40}
+#board .grid{stroke:rgba(110,151,255,.05)}
+/* mono dark: one navy tone for the whole site */
+:root{--paper:#0E1A3A;--white:#16244B;--ink:#FFFFFF;--text:#C8D2EA;--muted:#9AA6C6;--line:rgba(255,255,255,.12)}
+#printPages{--ink:#101C3D;--text:#2A3452;--muted:#4A5472;--line:#DDE3EE;--paper:#F5F7FB;--white:#FFFFFF}
+.ico,.why .wi{background:rgba(110,151,255,.14)}
+.tile.focus .ico{background:rgba(176,138,85,.18)}
+.why article.star{background:#1A2B5A;border-color:var(--bronze)}
+.tile:hover,.wcard:hover{border-color:rgba(110,151,255,.45)}
+.together{border-color:rgba(110,151,255,.35)}
+.eco-panel{background:var(--white);border:1px solid rgba(110,151,255,.35)}
+.eco-panel .links li{background:rgba(110,151,255,.14);color:var(--blue-hi)}
+.eco-list article{background:var(--white)!important;border:1px solid var(--line)}
+.role,.body a{color:var(--blue-hi)}
+
+/* site-wide background: faint circuit texture + soft light, one continuous canvas */
+body{background-color:var(--night);background-image:radial-gradient(900px 600px at 12% 18%,rgba(40,100,245,.10),transparent 70%),radial-gradient(800px 600px at 88% 62%,rgba(176,138,85,.06),transparent 70%),url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='320'%20height='320'%20viewBox='0%200%20320%20320'%3E%3Cg%20fill='none'%20stroke='%236E97FF'%20stroke-opacity='.10'%20stroke-width='1'%3E%3Cpath%20d='M0%2040H70l20%2020h60'/%3E%3Cpath%20d='M150%2060h40l20-20h110'/%3E%3Cpath%20d='M40%200v30l20%2020v70'/%3E%3Cpath%20d='M60%20120l30%2030h80'/%3E%3Cpath%20d='M240%200v90l-20%2020v60'/%3E%3Cpath%20d='M220%20170h100'/%3E%3Cpath%20d='M0%20220h50l30-30h40'/%3E%3Cpath%20d='M120%20190v60l20%2020h60l20%2020v30'/%3E%3Cpath%20d='M280%20320v-60l-30-30h-40'/%3E%3Cpath%20d='M0%20290h90'/%3E%3C/g%3E%3Cg%20fill='%236E97FF'%20fill-opacity='.16'%3E%3Ccircle%20cx='150'%20cy='60'%20r='2.2'/%3E%3Ccircle%20cx='60'%20cy='120'%20r='2.2'/%3E%3Ccircle%20cx='220'%20cy='170'%20r='2.2'/%3E%3Ccircle%20cx='120'%20cy='190'%20r='2.2'/%3E%3Ccircle%20cx='210'%20cy='230'%20r='2.2'/%3E%3Ccircle%20cx='90'%20cy='290'%20r='2.2'/%3E%3C/g%3E%3C/svg%3E");background-attachment:fixed,fixed,fixed;background-size:auto,auto,320px 320px}
+main > section:not(.hero),body > section:not(.hero),.facts,.dark,.globe-sec,.prod-sec,.board-sec,.careers-sec{background:transparent!important}
+footer{background:rgba(7,15,38,.55)!important}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap bar">
+    <a class="brand notranslate" translate="no" href="#top" aria-label="MindForge Ukraine, home"><img src="logo.png" alt=""><span class="en">MindForge Ukraine</span><span class="uk">Майндфорж Україна</span></a>
+    <nav aria-label="Main">
+      <a href="#build"><span class="en">Services</span><span class="uk">Послуги</span></a>
+      <a href="#product">CHYNNO</a>
+      <a href="#why"><span class="en">Why us</span><span class="uk">Переваги</span></a>
+      <a href="#ecosystem"><span class="en">How we work</span><span class="uk">Як працюємо</span></a>
+      <a href="#careers"><span class="en">Careers</span><span class="uk">Кар'єра</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="uk" aria-pressed="false">UA</button>
+    </div>
+    <a class="btn btn-primary" href="#start"><span class="en">Start a project</span><span class="uk">Почати проєкт</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <canvas class="net" id="heroNet" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-inner">
+        <h1>
+          <span class="line"><span class="en">Ideas in.</span><span class="uk">Ідея на вході.</span></span>
+          <span class="line legal"><span class="en">Products out.</span><span class="uk">Продукт на виході.</span></span>
+        </h1>
+        <p class="lead">
+          <span class="en">We create our own digital products and help you launch yours: LegalTech, web apps, SaaS and AI, with product rights and data handling thought through from the start.</span>
+          <span class="uk">Створюємо власні цифрові продукти й допомагаємо запускати ваші: LegalTech, вебзастосунки, SaaS та AI. Права на продукт і роботу з даними продумуємо від початку.</span>
+        </p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#start"><span class="en">Discuss a project</span><span class="uk">Обговорити проєкт</span></a>
+          <a class="btn btn-ghost" href="#product"><span class="en">See CHYNNO</span><span class="uk">Переглянути CHYNNO</span></a>
+        </div>
+        <p class="hook"><span class="en">Free 30-minute intro call. NDA on request.</span><span class="uk">Безкоштовна 30-хвилинна зустріч-знайомство. NDA&nbsp;— на ваш запит.</span></p>
+        <div class="creds">
+          <div class="cred"><span class="cred-k"><span class="en">Legal regime</span><span class="uk">Правовий режим</span></span><span class="cred-v"><span class="en">Diia.City resident</span><span class="uk">Резидент Дія.City</span></span></div>
+          <div class="cred"><span class="cred-k"><span class="en">Enterprise status</span><span class="uk">Статус підприємства</span></span><span class="cred-v"><span class="en">Critical to Ukraine's economy</span><span class="uk">Критично важливе для економіки України</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FACTS -->
+  <section class="facts" aria-label="Key facts">
+    <div class="wrap">
+      <div><span class="fk"><span class="en">Experience</span><span class="uk">Досвід</span></span><b><span data-to="18">18</span><i>+</i></b><span class="fl"><span class="en">years in law, since 2008</span><span class="uk">років у праві, з 2008-го</span></span><span class="fs"><span class="en">Founder: advocate, with 2+ years leading in international digital business</span><span class="uk">Засновник&nbsp;— адвокат, 2+ роки керівником у міжнародному digital-бізнесі</span></span></div>
+      <div><span class="fk"><span class="en">Reach</span><span class="uk">Географія</span></span><b><span data-to="9">9</span><i>+</i></b><span class="fl"><span class="en">jurisdictions</span><span class="uk">юрисдикцій</span></span><span class="fs"><span class="en">From Kyiv to New York</span><span class="uk">Від Києва до Нью-Йорка</span></span></div>
+      <div><span class="fk"><span class="en">Product</span><span class="uk">Продукт</span></span><b>CHYNNO</b><span class="fl"><span class="en">our own LegalTech product</span><span class="uk">власний LegalTech-продукт</span></span><span class="fs"><span class="en">In pilot for Diia.City residents</span><span class="uk">Пілот для резидентів Дія.City</span></span></div>
+    </div>
+  </section>
+
+
+  <!-- WHAT WE BUILD -->
+  <section id="build">
+    <div class="wrap">
+      <h2><span class="en">We build digital products. Ours and yours.</span><span class="uk">Створюємо цифрові продукти. Власні та ваші.</span></h2>
+      <p class="sub"><span class="en">We combine development, AI and legal expertise to turn ideas into solutions for business.</span><span class="uk">Поєднуємо розробку, AI та юридичну експертизу, щоб перетворювати ідеї на рішення для бізнесу.</span></p>
+      <div class="tiles">
+        <div class="tile focus">
+          <div class="head">
+            <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B08A55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M5 7l-3 7h6zM19 7l-3 7h6zM8 21h8"/></svg></span>
+            <span><span class="role"><span class="en">Specialisation</span><span class="uk">Спеціалізація</span></span><h3><span class="en">LegalTech solutions</span><span class="uk">LegalTech-рішення</span><span class="flag"><span class="en">Focus</span><span class="uk">Фокус</span></span></h3><span class="hint"><span class="en">From automating a single process to a full legal platform</span><span class="uk">Від автоматизації окремого процесу до юридичної платформи</span></span></span>
+          </div>
+          <div class="body"><div>
+            <p><span class="en">We design and build LegalTech for law firms, in-house teams and businesses: from document automation and approvals to compliance platforms, client portals and AI contract analysis. We work out the legal logic of each product with a practising advocate.</span><span class="uk">Проєктуємо й розробляємо LegalTech для юридичних фірм, in-house команд і бізнесу: від автоматизації документів і погоджень до комплаєнс-платформ, клієнтських кабінетів та AI-аналізу договорів. Юридичну логіку продукту опрацьовуємо за участю практикуючого адвоката.</span></p>
+            <ul><li><span class="en">Document generation</span><span class="uk">Генерація документів</span></li><li><span class="en">Approvals and sign-off</span><span class="uk">Погодження й підписання</span></li><li><span class="en">Deadline control</span><span class="uk">Контроль строків</span></li><li><span class="en">Compliance platforms</span><span class="uk">Комплаєнс-платформи</span></li><li><span class="en">AI contract analysis</span><span class="uk">AI-аналіз договорів</span></li><li><span class="en">Client legal portals</span><span class="uk">Клієнтські юр-кабінети</span></li><li><span class="en">Registers and e-workflow</span><span class="uk">Реєстри та е-документообіг</span></li></ul>
+            <a href="#start" data-pick="LegalTech"><span class="en">Discuss a LegalTech project</span><span class="uk">Обговорити LegalTech-проєкт</span></a>
+          </div></div>
+        </div>
+        <div class="tile">
+          <div class="head">
+            <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"/></svg></span>
+            <span><span class="role"><span class="en">Approach</span><span class="uk">Підхід</span></span><h3><span class="en">AI &amp; automation</span><span class="uk">AI та автоматизація</span></h3><span class="hint"><span class="en">Less manual work in everyday processes</span><span class="uk">Менше ручної роботи в щоденних процесах</span></span></span>
+          </div>
+          <div class="body"><div>
+            <p><span class="en">We take repetitive work off your team: processing incoming documents and requests, assistants on your own knowledge base, syncing CRM, email and spreadsheets.</span><span class="uk">Знімаємо з команди повторювану роботу: обробка вхідних документів і запитів, асистенти на вашій базі знань, зв'язка CRM, пошти й таблиць.</span></p>
+            <ul><li><span class="en">Document and request processing</span><span class="uk">Обробка документів і запитів</span></li><li><span class="en">Knowledge-base assistants</span><span class="uk">Асистенти на базі знань</span></li><li><span class="en">CRM, email, API integrations</span><span class="uk">Інтеграції CRM, пошти, API</span></li></ul>
+            <a href="#start" data-pick="AI"><span class="en">Discuss an automation</span><span class="uk">Обговорити автоматизацію</span></a>
+          </div></div>
+        </div>
+        <div class="tile">
+          <div class="head">
+            <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="13" height="10" rx="2"/><rect x="15" y="9" width="6" height="11" rx="1.5"/><path d="M7 18h6"/></svg></span>
+            <span><span class="role"><span class="en">Format</span><span class="uk">Формат</span></span><h3><span class="en">Web &amp; mobile apps</span><span class="uk">Веб- і мобільні застосунки</span></h3><span class="hint"><span class="en">Services for your clients and your team</span><span class="uk">Сервіси для ваших клієнтів і команди</span></span></span>
+          </div>
+          <div class="body"><div>
+            <p><span class="en">Client portals, booking and ordering services, internal tools for staff. Design, development, testing, then support after launch.</span><span class="uk">Кабінети клієнтів, сервіси запису й замовлень, внутрішні інструменти для співробітників. Дизайн, розробка, тестування й підтримка після запуску.</span></p>
+            <ul><li><span class="en">Client portals</span><span class="uk">Кабінети клієнтів</span></li><li><span class="en">Internal tools</span><span class="uk">Внутрішні інструменти</span></li><li><span class="en">iOS / Android</span><span class="uk">iOS / Android</span></li></ul>
+            <a href="#start" data-pick="App"><span class="en">Discuss an app</span><span class="uk">Обговорити застосунок</span></a>
+          </div></div>
+        </div>
+        <div class="tile">
+          <div class="head">
+            <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <span><span class="role"><span class="en">Stage</span><span class="uk">Стадія</span></span><h3><span class="en">SaaS &amp; MVP</span><span class="uk">SaaS і MVP</span></h3><span class="hint"><span class="en">A first version you can show users</span><span class="uk">Перша версія, яку можна показати користувачам</span></span></span>
+          </div>
+          <div class="body"><div>
+            <p><span class="en">Together we pick the few functions that prove the idea, fix the scope in writing, build the first version and grow it from real user feedback.</span><span class="uk">Разом відбираємо кілька функцій, що доводять ідею, фіксуємо обсяг письмово, будуємо першу версію і розвиваємо її за відгуками користувачів.</span></p>
+            <ul><li><span class="en">Scope workshop</span><span class="uk">Визначення обсягу</span></li><li><span class="en">First version</span><span class="uk">Перша версія</span></li><li><span class="en">Iterations after launch</span><span class="uk">Розвиток після запуску</span></li></ul>
+            <a href="#start" data-pick="SaaS"><span class="en">Discuss a product</span><span class="uk">Обговорити продукт</span></a>
+          </div></div>
+        </div>
+      </div>
+      <p class="together"><span class="en">In one product these work together: LegalTech expertise, an AI-driven approach, the right format and a stage that fits your goal.</span><span class="uk">В одному продукті все це працює разом: експертиза LegalTech, підхід з AI, потрібний формат і стадія, що відповідає вашій меті.</span></p>
+    </div>
+  </section>
+
+
+  <!-- PRODUCT -->
+  <section id="product" class="dark prod-sec">
+    <div class="wrap">
+      <div class="product">
+        <div>
+          <img class="chy" src="chynno-logo.png" alt="CHYNNO">
+          <span class="pill"><span class="en">Pilot · LegalTech</span><span class="uk">Пілот · LegalTech</span></span>
+          <h3 class="chy-h"><span class="en">Your Diia.City status. <em>Under control.</em></span><span class="uk">Статус резидента Дія.City. <em>Під контролем.</em></span></h3>
+          <p><span class="en">CHYNNO is MindForge's own LegalTech product. It shows whether a company keeps its residency, where the risks are and what to do next, without manual spreadsheets.</span><span class="uk">CHYNNO&nbsp;— власний LegalTech-продукт Майндфорж. Показує, чи компанія тримає статус резидента, де ризики і що робити далі&nbsp;— без ручних таблиць.</span></p>
+          <ul class="chy-v">
+            <li><i>01</i><span class="en">Status at a glance</span><span class="uk">Стан&nbsp;— з одного погляду</span></li>
+            <li><i>02</i><span class="en">Risk light</span><span class="uk">Світлофор ризиків</span></li>
+            <li><i>03</i><span class="en">Action plan with deadlines</span><span class="uk">План дій зі строками</span></li>
+          </ul>
+          <a class="btn btn-primary" href="#start" data-pick="CHYNNO"><span class="en">Join the pilot</span><span class="uk">Записатися в пілот</span></a>
+          <p class="road-cap"><span class="en">Module one: Diia.City status. More modules are on the way.</span><span class="uk">Перший модуль&nbsp;— статус Дія.City. Наступні вже в роботі.</span></p>
+        </div>
+        <div class="dash" aria-label="Illustrative product preview">
+          <div class="dash-top"><span class="dash-t">CHYNNO <b>·</b> <span class="en">Overview</span><span class="uk">Огляд</span></span><span class="dash-ok"><i></i><span class="en">Stable</span><span class="uk">Стабільно</span></span></div>
+          <div class="dash-mid">
+            <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" class="rb"/><circle cx="60" cy="60" r="50" class="rf"/></svg>
+            <div class="dash-kpi"><span class="k"><span class="en">Residency</span><span class="uk">Резидентство</span></span><span class="v"><span class="en">On track</span><span class="uk">У нормі</span></span><span class="s"><span class="en">3 of 4 checks green</span><span class="uk">3 з 4 перевірок&nbsp;— зелені</span></span></div>
+          </div>
+          <div class="dash-rows">
+            <div class="dr"><span class="bar" style="width:62%"></span><span class="dot g"></span></div>
+            <div class="dr"><span class="bar" style="width:48%"></span><span class="dot y"></span></div>
+            <div class="dr"><span class="bar" style="width:70%"></span><span class="dot g"></span></div>
+            <div class="dr"><span class="bar" style="width:55%"></span><span class="dot g"></span></div>
+          </div>
+          <div class="dash-lock"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span class="en">Details open in the pilot</span><span class="uk">Деталі&nbsp;— у пілоті</span></div>
+          <p class="dash-cap"><span class="en">Illustrative preview. CHYNNO helps you check selected Diia.City requirements on your own. Results are not an individual legal opinion.</span><span class="uk">Ілюстративне прев'ю. CHYNNO допомагає самостійно перевірити окремі вимоги Дія.City. Результати не є індивідуальним юридичним висновком.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="wrap">
+      <h2><span class="en">Why teams choose MindForge</span><span class="uk">Чому обирають Майндфорж</span></h2>
+      <p class="sub"><span class="en">Plenty of people can write code. Here is what you get on top. Tap a card for details.</span><span class="uk">Писати код уміють багато хто. Ось що ви отримуєте понад це. Натисніть на картку, щоб дізнатися більше.</span></p>
+      <div class="why">
+        <article class="wcard star" tabindex="0" role="button" aria-expanded="false">
+          <span class="wi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4AE72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span class="wplus" aria-hidden="true"></span>
+          <h3><span class="en">A business lawyer at the helm</span><span class="uk">Юрист, що виріс у бізнесі</span></h3>
+          <p><span class="en">Founder Igor Nyniuk: in law since 2008, advocate since 2021. He knows business from the inside, having grown through in-house roles from large-scale construction projects to leading the legal function of an international digital group, and today founds and runs MindForge.</span><span class="uk">Засновник Ігор Нинюк: у праві з 2008 року, адвокат з 2021-го. Бізнес знає зсередини: пройшов шлях in-house від масштабних будівельних проєктів до керівництва юридичною функцією міжнародної digital-групи, а сьогодні засновує й веде MindForge.</span></p>
+          <div class="wmore"><div><p><span class="en">Corporate governance, commercial contracts, IP and compliance across nine-plus jurisdictions. You discuss the product and the business risks with one person who has done both.</span><span class="uk">Корпоративне управління, комерційні договори, ІВ і комплаєнс у понад дев'яти юрисдикціях. Продукт і бізнес-ризики ви обговорюєте з однією людиною, яка робила і те, і інше.</span></p><a href="#start" data-pick=""><span class="en">Discuss your project</span><span class="uk">Обговорити ваш проєкт</span></a></div></div>
+        </article>
+        <article class="wcard" tabindex="0" role="button" aria-expanded="false">
+          <span class="wi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg></span><span class="wplus" aria-hidden="true"></span>
+          <h3><span class="en">One accountable contact</span><span class="uk">Один відповідальний контакт</span></h3>
+          <p><span class="en">One person answers for scope, timeline and communication on your project, from the brief to handover.</span><span class="uk">Одна людина відповідає за обсяг, строки й комунікацію на вашому проєкті&nbsp;— від запиту до передачі.</span></p>
+          <div class="wmore"><div><p><span class="en">You get regular updates and demos from the same contact, and any change of scope is agreed with you in writing before it happens.</span><span class="uk">Ви отримуєте регулярні оновлення й демо від тієї самої людини, а будь-яка зміна обсягу погоджується з вами письмово заздалегідь.</span></p><a href="#start" data-pick=""><span class="en">Discuss your project</span><span class="uk">Обговорити ваш проєкт</span></a></div></div>
+        </article>
+        <article class="wcard" tabindex="0" role="button" aria-expanded="false">
+          <span class="wi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></svg></span><span class="wplus" aria-hidden="true"></span>
+          <h3><span class="en">Rights transfer in the contract</span><span class="uk">Передача прав&nbsp;— у договорі</span></h3>
+          <p><span class="en">What passes to you and when is written into the contract. Third-party components and their licences are listed separately.</span><span class="uk">Що саме і коли переходить до вас, записано в договорі. Сторонні компоненти та їхні ліцензії фіксуємо окремо.</span></p>
+          <div class="wmore"><div><p><span class="en">Useful when you raise investment or sell the product: the chain of rights is documented, not assumed.</span><span class="uk">Це важливо, коли ви залучаєте інвестиції чи продаєте продукт: ланцюжок прав задокументований, а не припущений.</span></p><a href="#start" data-pick=""><span class="en">Discuss your project</span><span class="uk">Обговорити ваш проєкт</span></a></div></div>
+        </article>
+        <article class="wcard" tabindex="0" role="button" aria-expanded="false">
+          <span class="wi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="wplus" aria-hidden="true"></span>
+          <h3><span class="en">Diia.City resident</span><span class="uk">Резидент Дія.City</span></h3>
+          <p><span class="en"><span class="notranslate" translate="no">MindForge Ukraine LLC</span> is a Diia.City resident.</span><span class="uk">ТОВ «МАЙНДФОРЖ УКРАЇНА»&nbsp;— резидент Дія.City.</span></p>
+          <div class="wmore"><div><p><span class="en">Diia.City is Ukraine's special legal regime for tech companies. For you it means a transparent, officially registered counterparty.</span><span class="uk">Дія.City&nbsp;— спеціальний правовий режим для ІТ-компаній в Україні. Для вас це прозорий, офіційно зареєстрований контрагент.</span></p><a href="#start" data-pick=""><span class="en">Discuss your project</span><span class="uk">Обговорити ваш проєкт</span></a></div></div>
+        </article>
+        <article class="wcard" tabindex="0" role="button" aria-expanded="false">
+          <span class="wi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"/></svg></span><span class="wplus" aria-hidden="true"></span>
+          <h3><span class="en">A team built for your task</span><span class="uk">Команда під вашу задачу</span></h3>
+          <p><span class="en">We select specialists for the scope of your project and manage delivery on our side.</span><span class="uk">Добираємо фахівців під обсяг проєкту й керуємо виконанням на своєму боці.</span></p>
+          <div class="wmore"><div><p><span class="en">From one specialist to a full team. You work with one company and one contract, not with each freelancer separately.</span><span class="uk">Від одного фахівця до повної команди. Ви працюєте з однією компанією й одним договором, а не з кожним виконавцем окремо.</span></p><a href="#start" data-pick=""><span class="en">Discuss your project</span><span class="uk">Обговорити ваш проєкт</span></a></div></div>
+        </article>
+        <article class="wcard" tabindex="0" role="button" aria-expanded="false">
+          <span class="wi"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2864F5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><span class="wplus" aria-hidden="true"></span>
+          <h3><span class="en">International experience</span><span class="uk">Міжнародний досвід</span></h3>
+          <p><span class="en">The founder has worked on matters in Ukraine, the Czech Republic, Poland, Estonia, Cyprus, the Netherlands, Portugal, the UK and the US.</span><span class="uk">Засновник працював над питаннями в Україні, Чехії, Польщі, Естонії, на Кіпрі, у Нідерландах, Португалії, Великій Британії та США.</span></p>
+          <div class="wmore"><div><p><span class="en">An understanding of how cross-border deals are structured.</span><span class="uk">Розуміння того, як будуються транскордонні угоди.</span></p><a href="#start" data-pick=""><span class="en">Discuss your project</span><span class="uk">Обговорити ваш проєкт</span></a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GLOBAL -->
+  <section id="global" class="dark globe-sec">
+    <div class="wrap">
+      <span class="eyebrow-b"><span class="en">Jurisdictions</span><span class="uk">Юрисдикції</span></span>
+      <h2><span class="en">Built in Ukraine. <em>Working for the world.</em></span><span class="uk">Створено в Україні. <em>Працюємо для світу.</em></span></h2>
+      <p class="sub"><span class="en">The founder's experience spans nine jurisdictions, from Kyiv to New York. Select a city to see the matters.</span><span class="uk">Досвід засновника охоплює дев'ять юрисдикцій&nbsp;— від Києва до Нью-Йорка. Оберіть місто, щоб побачити напрями роботи.</span></p>
+      <div class="globe"><div class="geo-card" id="geoCard" hidden aria-live="polite"></div><svg id="globeMap" viewBox="60 20 900 360" role="img" aria-label="Map of the founder's jurisdictions"></svg></div>
+      <ul class="jur"><li><button type="button" data-k="ua"><span class="jc"><span class="en">Kyiv</span><span class="uk">Київ</span></span><span class="jn"><span class="en">Ukraine</span><span class="uk">Україна</span></span></button></li><li><button type="button" data-k="pl"><span class="jc"><span class="en">Warsaw</span><span class="uk">Варшава</span></span><span class="jn"><span class="en">Poland</span><span class="uk">Польща</span></span></button></li><li><button type="button" data-k="cz"><span class="jc"><span class="en">Prague</span><span class="uk">Прага</span></span><span class="jn"><span class="en">Czech Republic</span><span class="uk">Чехія</span></span></button></li><li><button type="button" data-k="ee"><span class="jc"><span class="en">Tallinn</span><span class="uk">Таллінн</span></span><span class="jn"><span class="en">Estonia</span><span class="uk">Естонія</span></span></button></li><li><button type="button" data-k="cy"><span class="jc"><span class="en">Nicosia</span><span class="uk">Нікосія</span></span><span class="jn"><span class="en">Cyprus</span><span class="uk">Кіпр</span></span></button></li><li><button type="button" data-k="nl"><span class="jc"><span class="en">Amsterdam</span><span class="uk">Амстердам</span></span><span class="jn"><span class="en">Netherlands</span><span class="uk">Нідерланди</span></span></button></li><li><button type="button" data-k="pt"><span class="jc"><span class="en">Lisbon</span><span class="uk">Лісабон</span></span><span class="jn"><span class="en">Portugal</span><span class="uk">Португалія</span></span></button></li><li><button type="button" data-k="uk"><span class="jc"><span class="en">London</span><span class="uk">Лондон</span></span><span class="jn"><span class="en">United Kingdom</span><span class="uk">Велика Британія</span></span></button></li><li><button type="button" data-k="us"><span class="jc"><span class="en">New York</span><span class="uk">Нью-Йорк</span></span><span class="jn"><span class="en">USA</span><span class="uk">США</span></span></button></li></ul>
+      <p class="geo-cap"><span class="en">Geography of the founder's professional experience</span><span class="uk">Географія професійного досвіду засновника</span></p>
+    </div>
+  </section>
+
+  <!-- LEGAL BUILT IN -->
+  <section id="legal" class="dark">
+    <div class="wrap">
+      <span class="eyebrow-b"><span class="en">Terms of engagement</span><span class="uk">Умови співпраці</span></span>
+      <h2><span class="en">Agreed before we start. <em>In writing.</em></span><span class="uk">Домовленості до старту. <em>Письмово.</em></span></h2>
+      <p class="sub"><span class="en">Three things we settle before any project begins. Exact terms depend on the project and are set out in the contract.</span><span class="uk">Три речі, які погоджуємо до початку будь-якого проєкту. Точні умови залежать від проєкту й закріплюються в договорі.</span></p>
+      <div class="agree">
+        <article><span class="an">I</span><h3><span class="en">Rights</span><span class="uk">Права</span></h3><p><span class="en">Which results pass to you, on what terms and at which payment stage.</span><span class="uk">Які результати переходять до вас, на яких умовах і на якому етапі оплати.</span></p><span class="af"><span class="en">Set out in the contract</span><span class="uk">Фіксуємо в договорі</span></span></article>
+        <article><span class="an">II</span><h3><span class="en">Confidentiality</span><span class="uk">Конфіденційність</span></h3><p><span class="en">How we handle your materials and data; an NDA can be signed before you share details.</span><span class="uk">Як ми працюємо з вашими матеріалами й даними; NDA можна підписати ще до обміну деталями.</span></p><span class="af"><span class="en">NDA before details</span><span class="uk">NDA&nbsp;— до обміну деталями</span></span></article>
+        <article><span class="an">III</span><h3><span class="en">Handover</span><span class="uk">Передача</span></h3><p><span class="en">Source code, documentation, access, and a list of third-party components with their licences.</span><span class="uk">Вихідний код, документація, доступи і перелік сторонніх компонентів із ліцензіями.</span></p><span class="af"><span class="en">Confirmed by a handover act</span><span class="uk">Підтверджуємо актом передачі</span></span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM -->
+  <section id="ecosystem" class="dark board-sec">
+    <div class="wrap">
+      <h2><span class="en">How we work together</span><span class="uk">Як ми працюємо разом</span></h2>
+      <p class="sub"><span class="en">We combine development, AI and legal expertise.<span class="dk"> Click any node on the diagram to see what you get.</span></span><span class="uk">Поєднуємо розробку, AI та юридичну експертизу.<span class="dk"> Натисніть на будь-який вузол схеми, щоб побачити, що ви отримуєте.</span></span></p>
+      <div class="eco">
+        <div class="board" aria-hidden="false"><svg id="board" viewBox="0 20 760 440" role="group" aria-label="How MindForge connects clients, specialists and expertise"></svg></div>
+        <div class="eco-panel" aria-live="polite">
+          <p class="k" id="ecoK"></p>
+          <h3 id="ecoH"></h3>
+          <p id="ecoP"></p>
+          <p class="gets-k"><span class="en">What you get</span><span class="uk">Що ви отримуєте</span></p>
+          <ul class="gets" id="ecoG"></ul>
+          <a class="btn btn-primary" id="ecoCta" href="#start"></a>
+          <p class="links-k"><span class="en">Connected with</span><span class="uk">Пов'язано з</span></p>
+          <ul class="links" id="ecoL"></ul>
+        </div>
+        <div class="eco-list" id="ecoList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <h2><span class="en">Project stages</span><span class="uk">Етапи проєкту</span></h2>
+      <p class="sub"><span class="en">A clear sequence, agreed with you at each step.</span><span class="uk">Зрозуміла послідовність, яку погоджуємо з вами на кожному етапі.</span></p>
+      <ol class="chain">
+        <li><b><span class="en">Brief</span><span class="uk">Запит</span></b><span><span class="en">Intro call, goals and constraints</span><span class="uk">Зустріч-знайомство, цілі й обмеження</span></span></li>
+        <li><b><span class="en">Requirements</span><span class="uk">Вимоги</span></b><span><span class="en">Scope, team and timeline agreed in writing</span><span class="uk">Обсяг, команда й строки&nbsp;— погоджуємо письмово</span></span></li>
+        <li><b><span class="en">Contract</span><span class="uk">Договір</span></b><span><span class="en">Rights, confidentiality, handover terms</span><span class="uk">Права, конфіденційність, умови передачі</span></span></li>
+        <li><b><span class="en">Delivery &amp; quality</span><span class="uk">Розробка і якість</span></b><span><span class="en">Regular demos and testing before acceptance</span><span class="uk">Регулярні демо й тестування до приймання</span></span></li>
+        <li><b><span class="en">Handover &amp; support</span><span class="uk">Передача й підтримка</span></b><span><span class="en">Code, docs, access; changes by agreement</span><span class="uk">Код, документація, доступи; зміни&nbsp;— за домовленістю</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+
+  <!-- START / BRIEF BUILDER -->
+  <section id="start" class="dark">
+    <div class="wrap" style="margin-bottom:48px">
+      <div class="promo">
+        <div>
+          <h3><span class="en">Free 30-minute intro call. NDA first if you like.</span><span class="uk">Безкоштовна 30-хвилинна зустріч. За бажанням&nbsp;— спершу NDA.</span></h3>
+          <p><span class="en">We'll discuss your task, possible approaches and the next step. No commitment.</span><span class="uk">Обговоримо вашу задачу, можливі підходи та наступний крок. Без зобов'язань.</span></p>
+        </div>
+        <a class="btn" href="#start"><span class="en">Book the call</span><span class="uk">Записатися на зустріч</span></a>
+      </div>
+    </div>
+    <div class="wrap brief">
+      <div>
+        <h2><span class="en">Let's talk</span><span class="uk">Почнімо розмову</span></h2>
+        <p class="sub"><span class="en">A few lines are enough. We usually reply by the next business day.</span><span class="uk">Достатньо кількох речень. Як правило, відповідаємо до наступного робочого дня.</span></p>
+        <div class="contact-lines">
+          <p class="mail-k"><span class="en">Or write directly</span><span class="uk">Або пишіть напряму</span></p>
+          <div class="mail-row"><span class="mail-big" id="mailAddr">projects@mindforgeukraine.com</span><button type="button" class="copy" id="copyMail"><span class="en">Copy</span><span class="uk">Копіювати</span></button></div>
+        </div>
+      </div>
+      <form class="builder" id="builder" onsubmit="return false">
+        <div class="q goal-q"><p><span class="en">What are you interested in?</span><span class="uk">Що вас цікавить?</span></p>
+          <div class="chips" data-group="goal" data-single>
+            <button type="button" class="chip" data-v="dev" aria-pressed="true"><span class="en">Product development / automation</span><span class="uk">Розробка продукту / автоматизація</span></button>
+            <button type="button" class="chip" data-v="chynno"><span class="en">CHYNNO access</span><span class="uk">Доступ до CHYNNO</span></button>
+            <button type="button" class="chip" data-v="spec"><span class="en">Working with us as a specialist</span><span class="uk">Співпраця як фахівець</span></button>
+            <button type="button" class="chip" data-v="partner"><span class="en">Partnership</span><span class="uk">Партнерство</span></button>
+            <button type="button" class="chip" data-v="other"><span class="en">Other</span><span class="uk">Інше</span></button>
+          </div></div>
+        <div class="row2">
+          <label class="fld"><span><span class="en">Name</span><span class="uk">Ім'я</span></span><input id="fName" type="text" autocomplete="name"></label>
+          <label class="fld"><span><span class="en">Email or Telegram</span><span class="uk">Email або Telegram</span></span><input id="fContact" type="text" autocomplete="email"></label>
+        </div>
+        <label class="fld"><span id="msgLabel"><span class="en">Your idea, task or proposal</span><span class="uk">Ваша ідея, задача або пропозиція</span></span><textarea id="msg"></textarea></label>
+        <div class="gx" data-for="dev">
+          <div class="q"><p><span class="en">Direction</span><span class="uk">Напрям</span> <em><span class="en">optional</span><span class="uk">необов'язково</span></em></p>
+            <div class="chips" data-group="need">
+              <button type="button" class="chip" data-v="LegalTech">LegalTech</button>
+              <button type="button" class="chip" data-v="AI"><span class="en">AI / automation</span><span class="uk">AI / автоматизація</span></button>
+              <button type="button" class="chip" data-v="App"><span class="en">Web / mobile</span><span class="uk">Веб / мобільний</span></button>
+              <button type="button" class="chip" data-v="SaaS">SaaS / MVP</button>
+            </div></div>
+          <div class="q"><p><span class="en">Budget</span><span class="uk">Бюджет</span> <em><span class="en">optional</span><span class="uk">необов'язково</span></em></p>
+            <div class="chips" data-group="budget" data-single>
+              <button type="button" class="chip" data-v="< $10k">&lt; $10k</button>
+              <button type="button" class="chip" data-v="$10–50k">$10–50k</button>
+              <button type="button" class="chip" data-v="$50k+">$50k+</button>
+              <button type="button" class="chip" data-v="Not sure yet"><span class="en">Not sure yet</span><span class="uk">Поки не знаю</span></button>
+            </div></div>
+          <div class="q"><p><span class="en">Preferred start</span><span class="uk">Бажаний старт</span> <em><span class="en">optional</span><span class="uk">необов'язково</span></em></p>
+            <div class="chips" data-group="when" data-single>
+              <button type="button" class="chip" data-v="ASAP"><span class="en">ASAP</span><span class="uk">Якнайшвидше</span></button>
+              <button type="button" class="chip" data-v="1-3 months"><span class="en">In 1–3 months</span><span class="uk">За 1–3 місяці</span></button>
+              <button type="button" class="chip" data-v="Later"><span class="en">Later</span><span class="uk">Пізніше</span></button>
+            </div></div>
+        </div>
+        <div class="gx" data-for="chynno" hidden>
+          <label class="fld"><span><span class="en">Company</span><span class="uk">Компанія</span> <em><span class="en">optional</span><span class="uk">необов'язково</span></em></span><input id="fCompany" type="text" autocomplete="organization"></label>
+        </div>
+        <div class="gx" data-for="spec" hidden>
+          <div class="row2">
+            <label class="fld"><span><span class="en">Specialisation</span><span class="uk">Спеціалізація</span></span><input id="fRole" type="text"></label>
+            <label class="fld"><span><span class="en">CV / portfolio link</span><span class="uk">Посилання на CV / портфоліо</span></span><input id="fLink" type="url" inputmode="url"></label>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="send"><span class="en">Send message</span><span class="uk">Надіслати звернення</span></button>
+        <input id="fHoney" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+        <p class="fstatus" id="fStatus" role="status" hidden></p>
+        <p class="note"><span class="en">Your message goes straight to projects@mindforgeukraine.com. See our <a href="privacy.html">Privacy Policy</a>.</span><span class="uk">Звернення надходить напряму на projects@mindforgeukraine.com. Див. <a href="privacy.html">Політику конфіденційності</a>.</span></p>
+        <div class="out" id="out" hidden>
+          <p class="out-k"><span class="en">Your request text. Send it to</span><span class="uk">Текст вашої заявки. Надішліть його на</span> <b>projects@mindforgeukraine.com</b></p>
+          <textarea id="outText" readonly aria-label="Prepared email"></textarea>
+          <div class="out-actions">
+            <button type="button" class="btn btn-primary" id="copyOut"><span class="en">Copy text</span><span class="uk">Копіювати текст</span></button>
+            <a class="btn btn-ghost" id="openMail" href="#" target="_blank" rel="noopener"><span class="en">Open in email app</span><span class="uk">Відкрити в пошті</span></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CAREERS -->
+  <section id="careers" class="dark careers-sec">
+    <div class="wrap">
+      <div class="careers">
+        <div>
+          <h3><span class="en">Ambitious and proactive? Let's build together</span><span class="uk">Амбітним та ініціативним&nbsp;— сюди</span></h3>
+          <p><span class="en">We develop our own products and build teams for client projects. We are looking for proactive people in development, design, product, law and business development. Tell us what you do and what you want to build. If we find a shared task, we agree the role, the format of cooperation and the pay.</span><span class="uk">Розвиваємо власні продукти й збираємо команду для клієнтських проєктів. Шукаємо ініціативних людей у розробці, дизайні, продукті, праві та розвитку бізнесу. Розкажіть, що вмієте й що хочете створювати. Якщо знайдемо спільну задачу&nbsp;— погодимо роль, формат співпраці та винагороду.</span></p>
+        </div>
+        <a class="btn btn-dark" href="#start" data-pick="Specialist"><span class="en">Discuss cooperation</span><span class="uk">Обговорити співпрацю</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="btn btn-primary sticky-cta" href="#start"><span class="en">Start a project</span><span class="uk">Почати проєкт</span></a>
+
+<footer>
+  <div class="wrap foot">
+    <div class="f-brand">
+      <a class="brand notranslate" translate="no" href="company.html" title="Company details"><img src="logo.png" alt="" style="height:30px"><span class="en">MindForge Ukraine</span><span class="uk">Майндфорж Україна</span></a>
+      <p><span class="en">We create our own products and help you launch yours.</span><span class="uk">Створюємо власні продукти й допомагаємо запускати ваші.</span></p>
+    </div>
+    <nav class="f-nav" aria-label="Footer">
+      <a href="#build"><span class="en">What we build</span><span class="uk">Що створюємо</span></a>
+      <a href="#product"><span class="en">Our products · CHYNNO</span><span class="uk">Наші продукти · CHYNNO</span></a>
+      <a href="#why"><span class="en">Why MindForge</span><span class="uk">Чому Майндфорж</span></a>
+      <a href="#careers"><span class="en">Careers</span><span class="uk">Кар'єра</span></a>
+    </nav>
+    <div class="f-cta">
+      <p class="f-cta-h"><span class="en">Let's discuss your idea</span><span class="uk">Обговорімо вашу ідею</span></p>
+      <span class="f-mail">projects@mindforgeukraine.com</span>
+      <a class="btn btn-primary" href="#start"><span class="en">Discuss a project</span><span class="uk">Обговорити проєкт</span></a>
+    </div>
+  </div>
+  <div class="wrap f-legal">
+    <span><span class="en"><span class="notranslate" translate="no">MindForge Ukraine LLC</span></span><span class="uk">ТОВ «МАЙНДФОРЖ УКРАЇНА»</span></span>
+    <span><span class="en">Company code</span><span class="uk">ЄДРПОУ</span> 46090205</span>
+    <span><span class="en">Diia.City resident</span><span class="uk">Резидент Дія.City</span></span>
+    <a href="company.html"><span class="en">Company details</span><span class="uk">Реквізити компанії</span></a>
+  </div>
+  <div class="wrap f-bottom">
+    <span>© <span id="y">2026</span> <span class="en notranslate" translate="no">MindForge Ukraine</span><span class="uk">ТОВ «МАЙНДФОРЖ УКРАЇНА»</span></span>
+    <a href="privacy.html"><span class="en">Privacy</span><span class="uk">Конфіденційність</span></a>
+    <a href="terms.html"><span class="en">Terms of Use</span><span class="uk">Умови використання</span></a>
+  </div>
+</footer>
+<div id="printPages" class="print-only" aria-hidden="true"></div>
+
+<script>
+(function(){
+  // language
+  var langBtns=document.querySelectorAll('.lang button');
+  function setLang(l){
+    document.body.classList.toggle('uk',l==='uk');
+    document.documentElement.lang=l==='uk'?'uk':'en';
+    langBtns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false')});
+    try{localStorage.setItem('mf-lang',l)}catch(e){}
+  }
+  langBtns.forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
+  var saved=null;try{saved=localStorage.getItem('mf-lang')}catch(e){}
+  if(!saved&&(navigator.language||'').toLowerCase().indexOf('uk')===0)saved='uk';
+  setLang(saved||'en');
+
+  // header turns solid on scroll
+  var hdr=document.getElementById('hdr');
+  var sc=document.querySelector('.sticky-cta'),st=document.getElementById('start');
+  function onScroll(){hdr.classList.toggle('solid',window.scrollY>40);if(sc&&st){var r=st.getBoundingClientRect();sc.classList.toggle('show',window.scrollY>600&&!(r.top<window.innerHeight&&r.bottom>0))}}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // hero network: measure path lengths for the draw-in
+  document.querySelectorAll('.net path').forEach(function(p){p.style.setProperty('--len',Math.ceil(p.getTotalLength()))});
+
+  // contract clauses
+  document.querySelectorAll('.clause').forEach(function(c){
+    c.addEventListener('click',function(){c.setAttribute('aria-expanded',c.getAttribute('aria-expanded')==='true'?'false':'true')});
+  });
+
+  // brief builder
+  document.querySelectorAll('.chips').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('.chip');if(!b)return;
+      if(g.hasAttribute('data-single'))g.querySelectorAll('.chip').forEach(function(x){if(x!==b)x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
+    });
+  });
+  var MSGL={dev:['Your idea or task','Ваша ідея або задача'],chynno:['What would you like to check?','Що хочете перевірити?'],spec:['A few words about you','Коротко про себе'],partner:['Your proposal','Ваша пропозиція'],other:['Your message','Ваше повідомлення']};
+  function goal(){var c=document.querySelector('[data-group="goal"] .chip[aria-pressed="true"]');return c?c.dataset.v:'dev'}
+  function setGoal(v){document.querySelectorAll('[data-group="goal"] .chip').forEach(function(c){c.setAttribute('aria-pressed',c.dataset.v===v?'true':'false')});syncGoal()}
+  function syncGoal(){var g=goal();document.querySelectorAll('#builder .gx').forEach(function(x){x.hidden=x.dataset.for!==g});
+    var l=document.getElementById('msgLabel');l.innerHTML='<span class="en"></span><span class="uk"></span>';l.children[0].textContent=MSGL[g][0];l.children[1].textContent=MSGL[g][1]}
+  document.querySelector('[data-group="goal"]').addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c)return;c.setAttribute('aria-pressed','true');syncGoal()});
+  function pick(v){
+    if(v==='CHYNNO'){setGoal('chynno');return}
+    if(v==='Specialist'){setGoal('spec');return}
+    setGoal('dev');
+    var c=v&&document.querySelector('[data-group="need"] .chip[data-v="'+v+'"]');
+    if(c)c.setAttribute('aria-pressed','true');
+  }
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){pick(a.dataset.pick)})});
+  function vals(g){return Array.prototype.map.call(document.querySelectorAll('[data-group="'+g+'"] .chip[aria-pressed="true"]'),function(c){return c.dataset.v})}
+  var FORM_ENDPOINT='https://formsubmit.co/ajax/projects@mindforgeukraine.com';
+  function setStatus(kind,en,uk){var st=document.getElementById('fStatus');st.className='fstatus '+kind;st.hidden=false;st.innerHTML='<span class="en"></span><span class="uk"></span>';st.children[0].textContent=en;st.children[1].textContent=uk}
+  function v(id){var e=document.getElementById(id);return e?e.value.trim():''}
+  function buildRequest(){
+    var g=goal(),msg=v('msg'),name=v('fName'),contact=v('fContact'),D=' — ',head,lines,sub;
+    var base=['Name: '+(name||'—'),'Contact: '+(contact||'—')];
+    if(g==='dev'){var need=vals('need');sub='Project request'+(need.length?D+need.join(', '):'');head='New project request from mindforgeukraine.com';
+      lines=base.concat(['Direction: '+(need.join(', ')||'—'),'Budget: '+(vals('budget')[0]||'—'),'Preferred start: '+(vals('when')[0]||'—'),'','Task:',msg])}
+    else if(g==='chynno'){sub='CHYNNO pilot request';head='New CHYNNO pilot request from mindforgeukraine.com';lines=base.concat(['Company: '+(v('fCompany')||'—'),'','What to check:',msg])}
+    else if(g==='spec'){sub='Specialist application';head='New specialist application from mindforgeukraine.com';lines=base.concat(['Specialisation: '+(v('fRole')||'—'),'CV / portfolio: '+(v('fLink')||'—'),'','About:',msg])}
+    else if(g==='partner'){sub='Partnership proposal';head='New partnership proposal from mindforgeukraine.com';lines=base.concat(['','Proposal:',msg])}
+    else {sub='Message';head='New message from mindforgeukraine.com';lines=base.concat(['','Message:',msg])}
+    return {name:name,contact:contact,msg:msg,subject:sub+(name?D+name:''),body:[head,''].concat(lines).join('\n')};
+  }
+  async function deliver(r){
+    // 1) inside the Claude viewer: send through the viewer's Gmail connector
+    if(window.claude&&typeof window.claude.use==='function'){
+      var mcp=null;try{mcp=await window.claude.use('mcp')}catch(e){}
+      if(!mcp){var er=new Error('Gmail connector is not available in this view');er.code='no_mcp';throw er}
+      if(mcp){var sent=await mcp.callTool('Gmail','send_message',{to:['projects@mindforgeukraine.com'],subject:r.subject,body:r.body});
+        // a message to your own alias lands only in Sent: move it to the inbox so it is seen
+        try{var tid=sent&&sent.payload&&sent.payload.threadId;if(tid)await mcp.callTool('Gmail','label_thread',{threadId:tid,labelIds:['INBOX','UNREAD']})}catch(e){}
+        return 'gmail'}
+    }
+    // 2) public site: form delivery service
+    if(location.protocol==='file:'){var fe=new Error('Opened as a local file: sending works only on the website');fe.code='local_file';throw fe}
+    var ctl=new AbortController(),tm=setTimeout(function(){ctl.abort()},15000),res;
+    try{res=await fetch(FORM_ENDPOINT,{method:'POST',signal:ctl.signal,headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({_subject:r.subject,name:r.name||'—',email:/@/.test(r.contact)?r.contact:undefined,contact:r.contact||'—',message:r.body,_template:'box',_captcha:'false',_honey:document.getElementById('fHoney').value})})}
+    finally{clearTimeout(tm)}
+    if(!res.ok)throw new Error('http '+res.status);
+    var j=await res.json(); // no valid JSON = not confirmed
+    if(!(j&&(j.success===true||j.success==='true')))throw new Error((j&&j.message)||'not confirmed');
+    return 'service';
+  }
+  var sending=false;
+  document.getElementById('send').addEventListener('click',async function(){
+    if(sending)return;
+    var r=buildRequest();
+    if(!r.contact||!r.msg){setStatus('err','Please add your email or Telegram and a few words.','Додайте email або Telegram і кілька слів.');(r.contact?document.getElementById('msg'):document.getElementById('fContact')).focus();return}
+    sending=true;var btn=this;btn.disabled=true;btn.classList.add('busy');setStatus('wait','Sending…','Надсилаємо…');document.getElementById('out').hidden=true;
+    try{
+      await deliver(r);
+      setStatus('ok','Message sent. We will reply to '+r.contact+', usually by the next business day.','Звернення надіслано. Відповімо на '+r.contact+', як правило, до наступного робочого дня.');
+      document.getElementById('msg').value='';
+      document.querySelectorAll('#builder .gx .chip[aria-pressed="true"]').forEach(function(c){c.setAttribute('aria-pressed','false')});['fCompany','fRole','fLink'].forEach(function(i){var e=document.getElementById(i);if(e)e.value=''});
+    }catch(e){
+      var code=e&&e.code;
+      var en='Could not send right now. Your text is kept below: copy it and email us directly.',uk='Не вдалося надіслати. Ваш текст збережено нижче: скопіюйте його й напишіть нам напряму.';
+      if(code==='server_not_connected'||code==='needs_reauth'){en='Gmail is not connected for this preview. Copy the text below and email us directly.';uk='У цьому прев\'ю не підключено Gmail. Скопіюйте текст нижче й напишіть нам напряму.'}
+      if(code==='not_in_manifest'||code==='approval_required'){en='Sending was not allowed in this view. Copy the text below and email us directly.';uk='Надсилання не дозволено в цьому вікні. Скопіюйте текст нижче й напишіть нам напряму.'}
+      if(code==='local_file'){en='This is a local copy of the page. Sending works on the website itself (and in the Claude preview).';uk='Це локальна копія сторінки. Надсилання працює на самому сайті (і в прев\'ю Claude).'}
+      if(code==='no_mcp'){en='Sending through Gmail is not available in this view. Copy the text below and email us directly.';uk='У цьому вікні надсилання через Gmail недоступне. Скопіюйте текст нижче й напишіть нам напряму.'}
+      setStatus('err',en,uk);
+      var dg=document.createElement('small');dg.className='diag';dg.textContent='['+(code||'')+(e&&e.message?' '+String(e.message).slice(0,120):'')+']';document.getElementById('fStatus').appendChild(dg);
+      var out=document.getElementById('out');document.getElementById('outText').value='To: projects@mindforgeukraine.com\nSubject: '+r.subject+'\n\n'+r.body;out.hidden=false;
+      document.getElementById('openMail').href='mailto:projects@mindforgeukraine.com?subject='+encodeURIComponent(r.subject)+'&body='+encodeURIComponent(r.body);if(window.claude)document.getElementById('openMail').hidden=true;
+    }finally{sending=false;btn.disabled=false;btn.classList.remove('busy')}
+  });
+
+
+  // ===== hero: neural / circuit field =====
+  (function(){
+    var c=document.getElementById('heroNet'); if(!c||!c.getContext) return;
+    var ctx=c.getContext('2d'), dpr=Math.min(window.devicePixelRatio||1,2), W=0,H=0, paths=[], sigs=[];
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function rnd(a,b){return a+Math.random()*(b-a)}
+    function build(){
+      W=c.clientWidth;H=c.clientHeight;c.width=W*dpr;c.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+      paths=[];sigs=[];var g=28, x0=W*0.42, n=Math.round(H/g*1.1);
+      for(var i=0;i<n;i++){
+        var x=x0+rnd(0,W*0.5), y=Math.round(rnd(0,H)/g)*g, pts=[[x,y]], steps=3+Math.floor(rnd(0,4));
+        for(var k=0;k<steps;k++){var d=Math.floor(rnd(0,3)), len=g*Math.floor(rnd(1,5)); var p=pts[pts.length-1];
+          if(d===0)pts.push([p[0]+len,p[1]]); else if(d===1)pts.push([p[0]+len,p[1]+(Math.random()<.5?-len:len)]); else pts.push([p[0],p[1]+(Math.random()<.5?-len:len)]);}
+        paths.push({pts:pts,l:Math.random()<.18,a:rnd(.18,.45)});
+      }
+      for(var j=0;j<14;j++)sigs.push({p:Math.floor(rnd(0,paths.length)),t:rnd(0,1),v:rnd(.002,.006)});
+    }
+    function len(pts){var L=0;for(var i=1;i<pts.length;i++)L+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);return L}
+    function at(pts,t){var L=len(pts)*t;for(var i=1;i<pts.length;i++){var s=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);if(L<=s){var r=s?L/s:0;return[pts[i-1][0]+(pts[i][0]-pts[i-1][0])*r,pts[i-1][1]+(pts[i][1]-pts[i-1][1])*r]}L-=s}return pts[pts.length-1]}
+    function draw(){
+      ctx.clearRect(0,0,W,H);
+      paths.forEach(function(p){ctx.beginPath();ctx.moveTo(p.pts[0][0],p.pts[0][1]);for(var i=1;i<p.pts.length;i++)ctx.lineTo(p.pts[i][0],p.pts[i][1]);
+        ctx.strokeStyle=p.l?'rgba(176,138,85,'+p.a+')':'rgba(110,151,255,'+p.a+')';ctx.lineWidth=1.4;ctx.stroke();
+        [p.pts[0],p.pts[p.pts.length-1]].forEach(function(q){ctx.beginPath();ctx.arc(q[0],q[1],3.2,0,7);ctx.fillStyle='#0E1A3A';ctx.fill();ctx.strokeStyle=p.l?'rgba(176,138,85,.8)':'rgba(110,151,255,.8)';ctx.lineWidth=1.4;ctx.stroke()})});
+      sigs.forEach(function(s){var p=paths[s.p];if(!p)return;var q=at(p.pts,s.t);var gr=ctx.createRadialGradient(q[0],q[1],0,q[0],q[1],10);gr.addColorStop(0,p.l?'rgba(240,211,162,.95)':'rgba(191,208,255,.95)');gr.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=gr;ctx.beginPath();ctx.arc(q[0],q[1],10,0,7);ctx.fill()});
+    }
+    function tick(){sigs.forEach(function(s){s.t+=s.v;if(s.t>1){s.t=0;s.p=Math.floor(Math.random()*paths.length)}});draw();if(!reduce)requestAnimationFrame(tick)}
+    build();draw();if(!reduce)requestAnimationFrame(tick);
+    var to;window.addEventListener('resize',function(){clearTimeout(to);to=setTimeout(function(){build();draw()},150)});
+  })();
+
+  // ===== platform board (PCB) =====
+  (function(){
+    var svg=document.getElementById('board'); if(!svg) return;
+    var NS='http://www.w3.org/2000/svg';
+    function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
+    var defs=el('defs',{}),f=el('filter',{id:'glow',x:'-50%',y:'-50%',width:'200%',height:'200%'},defs);
+    el('feGaussianBlur',{stdDeviation:'2.4',result:'b'},f);var m=el('feMerge',{},f);el('feMergeNode',{in:'b'},m);el('feMergeNode',{in:'SourceGraphic'},m);
+    // faint grid traces
+    var gg=el('g',{class:'gridg'});for(var x=20;x<760;x+=40)el('path',{d:'M'+x+' 0V480',class:'grid'},gg);for(var y=20;y<480;y+=40)el('path',{d:'M0 '+y+'H760',class:'grid'},gg);
+    // cosmic layer: nebula, stars, orbits, radar sweep
+    (function(){
+      var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var rg=el('radialGradient',{id:'neb',cx:'50%',cy:'50%',r:'50%'},defs);
+      el('stop',{offset:'0%','stop-color':'#3A5BD9','stop-opacity':'.45'},rg);el('stop',{offset:'45%','stop-color':'#22378A','stop-opacity':'.18'},rg);el('stop',{offset:'100%','stop-color':'#0B1531','stop-opacity':'0'},rg);
+      var rg2=el('radialGradient',{id:'neb2',cx:'50%',cy:'50%',r:'50%'},defs);
+      el('stop',{offset:'0%','stop-color':'#B08A55','stop-opacity':'.22'},rg2);el('stop',{offset:'100%','stop-color':'#B08A55','stop-opacity':'0'},rg2);
+      var sw=el('linearGradient',{id:'sweep',x1:'0',y1:'0',x2:'1',y2:'0'},defs);
+      el('stop',{offset:'0%','stop-color':'#6E97FF','stop-opacity':'0'},sw);el('stop',{offset:'100%','stop-color':'#6E97FF','stop-opacity':'.13'},sw);
+      var cosmos=el('g',{class:'cosmos'});
+      el('ellipse',{cx:380,cy:240,rx:330,ry:220,fill:'url(#neb)'},cosmos);
+      el('ellipse',{cx:610,cy:380,rx:180,ry:110,fill:'url(#neb2)'},cosmos);
+      var cg=el('radialGradient',{id:'coreLight',cx:'50%',cy:'50%',r:'50%'},defs);
+      el('stop',{offset:'0%','stop-color':'#9DB8FF','stop-opacity':'.55'},cg);el('stop',{offset:'30%','stop-color':'#4A72E8','stop-opacity':'.28'},cg);el('stop',{offset:'65%','stop-color':'#22378A','stop-opacity':'.08'},cg);el('stop',{offset:'100%','stop-color':'#0B1531','stop-opacity':'0'},cg);
+      el('ellipse',{cx:380,cy:240,rx:280,ry:200,fill:'url(#coreLight)',class:'corelight'},cosmos);
+      var vg=el('radialGradient',{id:'vign',cx:'50%',cy:'50%',r:'70%'},defs);
+      el('stop',{offset:'45%','stop-color':'#070F26','stop-opacity':'0'},vg);el('stop',{offset:'100%','stop-color':'#070F26','stop-opacity':'.75'},vg);
+      el('rect',{x:0,y:0,width:760,height:480,fill:'url(#vign)'},cosmos);
+      for(var i=0;i<70;i++){var sx=Math.random()*760,sy=Math.random()*480,sr=Math.random()<.85?.8+Math.random()*.6:1.6+Math.random()*.6;
+        var st=el('circle',{cx:sx.toFixed(1),cy:sy.toFixed(1),r:sr.toFixed(2),class:'star'},cosmos);
+        if(!rm&&Math.random()<.6)el('animate',{attributeName:'opacity',values:'.15;1;.15',dur:(2+Math.random()*4).toFixed(1)+'s',begin:(Math.random()*4).toFixed(1)+'s',repeatCount:'indefinite'},st)}
+      [[150,60,'38s',1],[215,95,'60s',-1],[290,135,'90s',1]].forEach(function(o,k){
+        var og=el('g',{},cosmos);el('ellipse',{cx:380,cy:240,rx:o[0],ry:o[1],class:'orbit'},og);
+        var pl=el('circle',{cx:380+o[0],cy:240,r:k===1?3.2:2.4,class:'planet'+(k===1?' l':'')},og);
+        if(!rm){var mp=el('animateMotion',{dur:o[2],repeatCount:'indefinite',path:'M'+(380+o[0])+' 240 A'+o[0]+' '+o[1]+' 0 1 '+(o[3]>0?1:0)+' '+(380-o[0])+' 240 A'+o[0]+' '+o[1]+' 0 1 '+(o[3]>0?1:0)+' '+(380+o[0])+' 240'},pl);pl.setAttribute('cx',0);pl.setAttribute('cy',0)}});
+      if(!rm){var sg=el('g',{},cosmos);el('path',{d:'M380 240 L700 240 A320 320 0 0 0 685 145 Z',fill:'url(#sweep)'},sg);
+        el('animateTransform',{attributeName:'transform',type:'rotate',from:'0 380 240',to:'360 380 240',dur:'14s',repeatCount:'indefinite'},sg)}
+    })();
+    var C={x:380,y:240,w:170,h:110};
+    var P=[
+      {id:'clients',x:110,y:110,l:false,pin:[C.x-85,215],route:function(p){return 'M'+p.pin[0]+' '+p.pin[1]+' H250 L170 135 H'+(p.x+72)},
+       en:['Clients','Companies with ideas','Come with an idea, a request or an ambition. We help refine the concept, assess the options and map the path to launch. One accountable contact takes it from the first call to launch and support.'],
+       uk:['Замовники','Компанії з ідеями','Приходите з ідеєю, запитом чи амбіцією. Допоможемо уточнити задум, оцінити можливості й визначити шлях до запуску. Один відповідальний контакт веде проєкт від першої зустрічі до запуску й підтримки.'],link:['software','ai','legal']},
+      {id:'builders',x:110,y:370,l:false,pin:[C.x-85,265],route:function(p){return 'M'+p.pin[0]+' '+p.pin[1]+' H250 L170 345 H'+(p.x+72)},
+       en:['Specialists','Ambitious and proactive','People in development, design, product, law and business development. For a shared task we agree the role, format and pay.'],
+       uk:['Фахівці','Амбітні та ініціативні','Розробка, дизайн, продукт, право й розвиток бізнесу. Під спільну задачу погоджуємо роль, формат і винагороду.'],link:['software','ai','products']},
+      {id:'software',x:290,y:45,l:false,pin:[350,C.y-55],route:function(p){return 'M'+p.pin[0]+' '+p.pin[1]+' V150 L'+p.x+' 90 V'+(p.y+20)},
+       en:['Development','Web, mobile, SaaS','Portals, apps and products from MVP to scale, with code and access handed over as agreed.'],
+       uk:['Розробка','Веб, мобільні, SaaS','Кабінети, застосунки й продукти від MVP до масштабу, з передачею коду й доступів за домовленістю.'],link:['clients','builders','products']},
+      {id:'ai',x:470,y:45,l:false,pin:[410,C.y-55],route:function(p){return 'M'+p.pin[0]+' '+p.pin[1]+' V150 L'+p.x+' 90 V'+(p.y+20)},
+       en:['AI','Automation & assistants','Assistants, document processing and integrations that take routine off your team.'],
+       uk:['AI','Автоматизація й асистенти','Асистенти, обробка документів та інтеграції, що знімають рутину з команди.'],link:['clients','builders','legal']},
+      {id:'products',x:650,y:110,l:false,pin:[C.x+85,215],route:function(p){return 'M'+p.pin[0]+' '+p.pin[1]+' H510 L590 135 H'+(p.x-72)},
+       en:['Own products','CHYNNO and what comes next','Our own software. First up: CHYNNO, a compliance platform for Diia.City residents, now in pilot.'],
+       uk:['Власні продукти','CHYNNO і наступні','Власний софт. Перший\u00a0— CHYNNO, комплаєнс-платформа для резидентів Дія.City на етапі пілоту.'],link:['software','legal','builders']},
+      {id:'legal',x:650,y:370,l:true,pin:[C.x+85,265],route:function(p){return 'M'+p.pin[0]+' '+p.pin[1]+' H510 L590 345 H'+(p.x-72)},
+       s:{en:'Legal & IP',uk:'Право й ІВ'},en:['Law & intellectual property','Built into every project','A practising advocate leads the company. Product rights, data and compliance are considered during planning and development.'],
+       uk:['Право та інтелектуальна власність','Вбудовано в кожен проєкт','Компанію очолює практикуючий адвокат. Питання прав на продукт, даних і комплаєнсу враховуємо під час планування та розробки.'],link:['clients','ai','products']}
+    ];
+    var GETS={
+      clients:{en:['A clear plan, scope and estimate in writing','One accountable contact through the whole project','Legal and IP questions raised early, not at the end'],uk:['Чіткий план, обсяг і оцінка\u00a0— письмово','Один відповідальний контакт на весь проєкт','Юридичні питання й ІВ\u00a0— на старті, а не наприкінці'],cta:['Discuss your idea','Обговорити ідею'],pick:''},
+      builders:{en:['Own products and client projects','Role and format agreed for the task','Pay agreed in writing'],uk:['Власні продукти й клієнтські проєкти','Роль і формат\u00a0— під задачу','Винагорода\u00a0— погоджена письмово'],cta:['Discuss cooperation','Обговорити співпрацю'],pick:'',href:'#careers'},
+      software:{en:['Agreed requirements','Working versions and testing','Handover of code, documentation and access'],uk:['Погоджені вимоги','Робочі версії та тестування','Передача коду, документації й доступів'],cta:['Discuss a product','Обговорити продукт'],pick:'App'},
+      ai:{en:['Assistants and document processing','Integrations with the tools you already use','Testing the solution on your own tasks'],uk:['Асистенти й обробка документів','Інтеграції з вашими інструментами','Перевірка рішення на ваших задачах'],cta:['Discuss an automation','Обговорити автоматизацію'],pick:'AI'},
+      products:{en:['CHYNNO: Diia.City compliance on one screen','Pilot access for early users','A say in the product\'s development through your feedback'],uk:['CHYNNO: комплаєнс Дія.City на одному екрані','Доступ до пілоту для перших користувачів','Можливість впливати на розвиток продукту через зворотний зв\'язок'],cta:['Request pilot access','Запросити доступ до пілоту'],pick:'CHYNNO'},
+      legal:{en:['IP transfer terms set out in writing','Data protection considered from the start','LegalTech built by people who know the law'],uk:['Умови передачі прав ІВ\u00a0— письмово','Захист даних\u00a0— з самого початку','LegalTech від тих, хто знає право'],cta:['Discuss your project\'s legal questions','Обговорити правові питання проєкту'],pick:''}
+    };
+    var byId={};P.forEach(function(p){byId[p.id]=p});
+    var gT=el('g',{}),gS=el('g',{}),traces={};
+    P.forEach(function(p){var d=p.route(p);traces[p.id]=el('path',{d:d,class:'trace'+(p.l?' l':'')},gT)});
+    // bottom bus between left and right (cross-links)
+    var bus=el('path',{d:'M250 265 V420 H510 V265',class:'trace'},gT); var bus2=el('path',{d:'M250 215 V60 H510 V215',class:'trace'},gT);
+    // vias on bends
+    [[250,215],[250,265],[510,215],[510,265],[350,150],[410,150],[250,420],[510,420],[250,60],[510,60]].forEach(function(v){el('circle',{cx:v[0],cy:v[1],r:4.5,class:'via'},gT)});
+    // chip
+    var halo=el('rect',{x:C.x-C.w/2-10,y:C.y-C.h/2-10,width:C.w+20,height:C.h+20,rx:18,class:'chalo'});
+    var chg=el('linearGradient',{id:'chipFill',x1:'0',y1:'0',x2:'0',y2:'1'},defs);el('stop',{offset:'0%','stop-color':'#2A4FC4'},chg);el('stop',{offset:'100%','stop-color':'#152E7A'},chg);
+    var ch=el('g',{class:'chip'});el('rect',{x:C.x-C.w/2,y:C.y-C.h/2,width:C.w,height:C.h,rx:12,class:'body'},ch);
+    for(var i=0;i<6;i++){el('rect',{x:C.x-C.w/2+22+i*24,y:C.y-C.h/2-6,width:8,height:6,rx:1.5,class:'pin'},ch);el('rect',{x:C.x-C.w/2+22+i*24,y:C.y+C.h/2,width:8,height:6,rx:1.5,class:'pin'},ch)}
+    for(var j=0;j<3;j++){el('rect',{x:C.x-C.w/2-6,y:C.y-28+j*24,width:6,height:8,rx:1.5,class:'pin'},ch);el('rect',{x:C.x+C.w/2,y:C.y-28+j*24,width:6,height:8,rx:1.5,class:'pin'},ch)}
+    var t1=el('text',{x:C.x,y:C.y-2},ch);t1.textContent='MindForge';var t2=el('text',{x:C.x,y:C.y+20,class:'s'},ch);t2.textContent='Ukraine';
+    // pads
+    var pads={};
+    P.forEach(function(p){var g=el('g',{class:'pad'+(p.l?' l':''),tabindex:'0',role:'button',transform:'translate('+p.x+' '+p.y+')'});
+      el('rect',{x:-72,y:-20,width:144,height:40,rx:10},g);el('circle',{cx:-56,cy:0,r:4,class:'dotp'},g);var t=el('text',{x:8,y:5},g);t.dataset.en=p.s?p.s.en:p.en[0];t.dataset.uk=p.s?p.s.uk:p.uk[0];
+      g.addEventListener('click',function(){sel(p.id)});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();sel(p.id)}});pads[p.id]=g});
+    // signals
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches, sigEls=[];
+    function shot(k,inbound){if(reduce)return;var p=byId[k];var c=el('circle',{r:4.2,class:'sig'+(p.l?' l':'')},gS);
+      var a=el('animateMotion',{dur:inbound?'.7s':'1.1s',fill:'freeze',begin:'indefinite',path:p.route(p),keyPoints:inbound?'1;0':'0;1',keyTimes:'0;1',calcMode:'spline',keySplines:'.45 0 .25 1'},c);
+      try{a.beginElement()}catch(e){}setTimeout(function(){c.remove()},inbound?760:1200)}
+    function signals(){}
+    function beat(targets){if(reduce)return;var cl=svg.querySelector('.corelight');[ch,halo,cl].forEach(function(e){if(!e)return;e.classList.remove('beat');void e.getBoundingClientRect();e.classList.add('beat')});
+      [0,240].forEach(function(dl){setTimeout(function(){var r=el('rect',{x:C.x-C.w/2,y:C.y-C.h/2,width:C.w,height:C.h,rx:12,class:'ripple'});gS.parentNode.insertBefore(r,gS);setTimeout(function(){r.remove()},1450)},dl)});
+      setTimeout(function(){(targets||P.map(function(p){return p.id})).forEach(function(k){shot(k,false)})},330)}
+    var live=true,hbT=null;
+    function loop(){clearInterval(hbT);if(reduce)return;hbT=setInterval(function(){if(live&&!document.hidden)beat()},2400)}
+    setTimeout(function(){if(live)beat()},600);
+    if('IntersectionObserver' in window){new IntersectionObserver(function(es){live=es[0].isIntersecting},{threshold:.15}).observe(svg)}
+    loop();
+    var cur='clients';
+    function L(){return document.body.classList.contains('uk')?'uk':'en'}
+    function render(){var l=L(),p=byId[cur],on=[cur].concat(p.link);
+      svg.classList.add('dim');
+      Object.keys(traces).forEach(function(k){traces[k].classList.toggle('on',on.indexOf(k)>-1)});
+      
+      Object.keys(pads).forEach(function(k){var g=pads[k];g.classList.toggle('active',k===cur);g.setAttribute('aria-pressed',k===cur?'true':'false');var t=g.querySelector('text');t.textContent=t.dataset[l];g.setAttribute('aria-label',byId[k][l][0]+(l==='uk'?'\u00a0— показати деталі':'\u00a0— show details'))});
+      document.getElementById('ecoK').textContent=p[l][1];document.getElementById('ecoH').textContent=p[l][0];document.getElementById('ecoP').textContent=p[l][2];
+      var ul=document.getElementById('ecoL');ul.innerHTML='';p.link.forEach(function(k){var li=document.createElement('li'),bt=document.createElement('button');bt.type='button';bt.textContent=byId[k].s?byId[k].s[l]:byId[k][l][0];bt.addEventListener('click',function(){sel(k)});li.appendChild(bt);ul.appendChild(li)});
+      var G=GETS[cur], gl=document.getElementById('ecoG');gl.innerHTML='';G[l].forEach(function(t){var li=document.createElement('li');li.textContent=t;gl.appendChild(li)});
+      var cta=document.getElementById('ecoCta');cta.textContent=G.cta[l==='uk'?1:0];cta.setAttribute('href',G.href||'#start');cta.onclick=function(){if(G.pick&&typeof pick==='function')pick(G.pick)};
+    }
+    function list(){var l=L(),box=document.getElementById('ecoList');if(!box)return;box.innerHTML='';
+      ['clients','builders'].forEach(function(k){var p=byId[k],G=GETS[k],a=document.createElement('article');
+        a.innerHTML='<p class="k"></p><h3></h3><p></p><ul></ul><a class="btn btn-primary"></a>';a.children[0].textContent=p[l][1];a.children[1].textContent=p[l][0];a.children[2].textContent=p[l][2];
+        G[l].forEach(function(t){var li=document.createElement('li');li.textContent=t;a.children[3].appendChild(li)});
+        var b=a.children[4];b.textContent=G.cta[l==='uk'?1:0];b.href=G.href||'#start';b.addEventListener('click',function(){if(G.pick&&typeof pick==='function')pick(G.pick)});box.appendChild(a)})}
+    function fixH(){var pn=document.querySelector('.eco-panel');if(!pn)return;pn.style.minHeight='';if(window.innerWidth<=900)return;var keep=cur,mx=0;
+      P.forEach(function(p){cur=p.id;render();mx=Math.max(mx,pn.offsetHeight)});cur=keep;render();pn.style.minHeight=mx+'px'}
+    var rT;window.addEventListener('resize',function(){clearTimeout(rT);rT=setTimeout(fixH,200)});document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setTimeout(fixH,30)})});
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fixH);setTimeout(fixH,50);
+    var booted=false;
+    function sel(id){cur=id;render();if(!booted)return;shot(id,true);setTimeout(function(){beat([id].concat(byId[id].link))},650);loop()}
+    sel(cur);booted=true;list();
+    document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setTimeout(function(){render();list()},0)})});
+  })();
+
+  (function(){var b=document.getElementById('copyOut');if(!b)return;b.addEventListener('click',function(){var ta=document.getElementById('outText');
+    function sel(){ta.focus();ta.select()}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ta.value).then(function(){b.querySelectorAll('span').forEach(function(x){x.textContent=x.className==='uk'?'Скопійовано':'Copied'})},sel)}else sel()})})();
+  document.querySelectorAll('.wcard').forEach(function(c){
+    function t(e){if(e.target.closest('a'))return;var o=!c.classList.contains('open');c.classList.toggle('open',o);c.setAttribute('aria-expanded',o?'true':'false')}
+    c.addEventListener('click',t);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t(e)}});
+  });
+  // facts count-up
+  (function(){var els=document.querySelectorAll('.facts [data-to]');if(!els.length||!('IntersectionObserver' in window))return;
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var el=e.target,to=+el.dataset.to,from=to>1000?to-18:0,t0=null;
+      function step(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1100),v=Math.round(from+(to-from)*(1-Math.pow(1-k,3)));el.textContent=v;if(k<1)requestAnimationFrame(step)}requestAnimationFrame(step)})},{threshold:.6});
+    els.forEach(function(el){io.observe(el)})})();
+  // global map: route of experience
+  (function(){
+    var svg=document.getElementById('globeMap');if(!svg)return;var NS='http://www.w3.org/2000/svg';
+    function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
+    function P(lon,lat){return[(lon+95)/150*1000,(66-lat)/42*420]}
+    var g=el('g',{});for(var x=12;x<1000;x+=16)for(var y=12;y<420;y+=16){if(Math.random()<.42)el('circle',{cx:x,cy:y,r:1.6,class:'dot'},g)}
+    var hub=P(30.5,50.45);
+    var INFO={
+      ua:{f:'🇺🇦',en:['Ukraine · Kyiv',['Corporate governance','Commercial contracts','Diia.City','Employment law']],uk:['Україна · Київ',['Корпоративне управління','Комерційні договори','Дія.City','Трудове право']]},
+      pl:{f:'🇵🇱',en:['Poland · Warsaw',['Setting up sp. z o.o.','Leases and assignment','B2B agreements','NIS2 (KSC) compliance']],uk:['Польща · Варшава',['Створення sp. z o.o.','Оренда та цесія','B2B-договори','Комплаєнс NIS2 (KSC)']]},
+      cz:{f:'🇨🇿',en:['Czech Republic · Prague',['Company policies and EU compliance','Dispute support']],uk:['Чехія · Прага',['Політики компанії та комплаєнс у ЄС','Супровід спорів']]},
+      ee:{f:'🇪🇪',en:['Estonia · Tallinn',['Corporate law','Commercial law']],uk:['Естонія · Таллінн',['Корпоративне право','Комерційне право']]},
+      cy:{f:'🇨🇾',en:['Cyprus · Nicosia',['KYC/AML for corporate structures']],uk:['Кіпр · Нікосія',['KYC/AML для корпоративних структур']]},
+      nl:{f:'🇳🇱',en:['Netherlands · Amsterdam',['Corporate and commercial matters','Acquisitions']],uk:['Нідерланди · Амстердам',['Корпоративні та комерційні питання','Угоди з купівлі']]},
+      pt:{f:'🇵🇹',en:['Portugal · Lisbon',['Corporate law']],uk:['Португалія · Лісабон',['Корпоративне право']]},
+      uk:{f:'🇬🇧',en:['United Kingdom · London',['Acquisition of companies and brands','Restructuring']],uk:['Велика Британія · Лондон',['Купівля компаній і брендів','Реструктуризація']]},
+      us:{f:'🇺🇸',en:['USA · New York',['Trademarks (USPTO)','TCPA compliance','Debt recovery']],uk:['США · Нью-Йорк',['Торговельні марки (USPTO)','Комплаєнс TCPA','Стягнення заборгованості']]}
+    };
+    var C=[{k:'us',n:['New York','Нью-Йорк'],c:['USA','США'],ll:[-74,40.7],dx:-6,dy:30,a:'middle'},
+           {k:'uk',n:['London','Лондон'],c:['UK','Велика Британія'],ll:[-0.1,51.5],dx:-18,dy:-6,a:'end'},
+           {k:'cz',n:['Prague','Прага'],c:['Czech Republic','Чехія'],ll:[14.4,50.1],dx:-14,dy:30,a:'end'},
+           {k:'pl',n:['Warsaw','Варшава'],c:['Poland','Польща'],ll:[21,52.2],dx:-4,dy:-40,a:'middle'},
+           {k:'ee',n:['Tallinn','Таллінн'],c:['Estonia','Естонія'],ll:[24.75,59.4],dx:16,dy:-6,a:'start'},
+           {k:'cy',n:['Nicosia','Нікосія'],c:['Cyprus','Кіпр'],ll:[33.4,35.2],dx:16,dy:6,a:'start'},
+           {k:'nl',n:['Amsterdam','Амстердам'],c:['Netherlands','Нідерланди'],ll:[4.9,52.37],dx:0,dy:-40,a:'middle'},
+           {k:'pt',n:['Lisbon','Лісабон'],c:['Portugal','Португалія'],ll:[-9.14,38.72],dx:-16,dy:6,a:'end'}];
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var gA=el('g',{}),gS=el('g',{}),gP=el('g',{}),gC=el('g',{}),arcs={},cities={};
+    C.forEach(function(c,i){var p=P(c.ll[0],c.ll[1]);c.p=p;var mx=(p[0]+hub[0])/2,my=Math.min(p[1],hub[1])-Math.max(40,Math.abs(p[0]-hub[0])*.28);
+      c.d='M'+hub[0]+' '+hub[1]+' Q'+mx+' '+my+' '+p[0]+' '+p[1];arcs[c.k]=el('path',{d:c.d,class:'arc'+(i%2?' l':'')},gA);
+      });
+    function city(k,p,cls,label,sub,dx,dy,anchor){var g=el('g',{class:'city '+cls,tabindex:'0',role:'button','data-k':k},gC);
+      el('circle',{cx:p[0],cy:p[1],r:22,class:'hit'},g);el('circle',{cx:p[0],cy:p[1],r:cls==='hub'?13:10,class:'halo'},g);el('circle',{cx:p[0],cy:p[1],r:cls==='hub'?5.5:4,class:'core'},g);
+      var t=el('text',{x:p[0]+dx,y:p[1]+dy,'text-anchor':anchor},g);t.dataset.en=label[0];t.dataset.uk=label[1];var u=el('text',{x:p[0]+dx,y:p[1]+dy+16,'text-anchor':anchor,class:'c'},g);u.dataset.en=sub[0];u.dataset.uk=sub[1];
+      g.addEventListener('click',function(){sel(k)});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();sel(k)}});cities[k]=g}
+    C.forEach(function(c){city(c.k,c.p,'',c.n,c.c,c.dx,c.dy,c.a)});
+    city('ua',hub,'hub',['Kyiv','Київ'],['MindForge HQ','Майндфорж'],18,30,'start');
+    var card=document.getElementById('geoCard'),cur=null;
+    function L(){return document.body.classList.contains('uk')?'uk':'en'}
+    function pulse(c){if(reduce||!c)return;gP.innerHTML='';var dot=el('circle',{r:6,class:'pulse'},gP);
+      var am=el('animateMotion',{dur:'1.1s',fill:'freeze',path:c.d,begin:'indefinite',calcMode:'spline',keyTimes:'0;1',keySplines:'.4 0 .2 1'},dot);try{am.beginElement()}catch(e){}
+      setTimeout(function(){if(dot.parentNode)dot.remove()},1400)}
+    function render(){var l=L();
+      svg.classList.toggle('picked',!!cur);
+      Object.keys(arcs).forEach(function(k){arcs[k].classList.toggle('on',k===cur)});
+      Object.keys(cities).forEach(function(k){cities[k].classList.toggle('sel',k===cur);cities[k].setAttribute('aria-pressed',k===cur?'true':'false')});
+      document.querySelectorAll('.jur button').forEach(function(bt){bt.setAttribute('aria-pressed',bt.dataset.k===cur?'true':'false')});
+      if(!cur){card.hidden=true;return}
+      var I=INFO[cur],d=I[l];
+      card.innerHTML='<button type="button" class="gc-x" aria-label="Close">×</button><p class="gc-k"></p><p class="gc-h"></p><ul></ul><a class="gc-a" href="#start"></a>';
+      card.querySelector('.gc-k').textContent=l==='uk'?'Досвід засновника':"Founder's experience";
+      card.querySelector('.gc-h').textContent=d[0];
+      d[1].forEach(function(t){var li=document.createElement('li');li.textContent=t;card.querySelector('ul').appendChild(li)});
+      var a=card.querySelector('.gc-a');a.textContent=(l==='uk'?'Обговорити схожу задачу':'Discuss a similar task')+' ↗';
+      a.addEventListener('click',function(){var country=d[0].split(' · ')[0];if(typeof setGoal==='function')setGoal('dev');var m=document.getElementById('msg');if(m&&!m.value.trim())m.value=(l==='uk'?'Цікавить задача, пов\'язана з юрисдикцією: ':'I have a task related to: ')+country+'. '});
+      card.querySelector('.gc-x').addEventListener('click',function(){cur=null;render()});
+      card.hidden=false}
+    function sel(k){cur=(cur===k)?null:k;render();if(cur&&cur!=='ua')pulse(C.filter(function(c){return c.k===cur})[0])}
+    document.querySelectorAll('.jur button').forEach(function(bt){bt.addEventListener('click',function(){sel(bt.dataset.k)})});
+    function lang(){var l=L();svg.querySelectorAll('text').forEach(function(t){t.textContent=t.dataset[l]});if(cur)render()}
+    lang();document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setTimeout(lang,0)})});
+  })();
+  // print: load company details, privacy and terms so Ctrl+P prints the whole site
+  (function(){
+    var box=document.getElementById('printPages');if(!box||!window.fetch)return;
+    function load(){
+      ['company.html','privacy.html','terms.html'].forEach(function(u){
+        fetch(u).then(function(r){return r.ok?r.text():''}).then(function(t){if(!t)return;
+          var d=new DOMParser().parseFromString(t,'text/html');
+          ['en','uk'].forEach(function(l){var art=d.querySelector('main article.'+l);if(!art)return;
+            var a=document.createElement('article');a.className='pp '+l;a.dataset.src=u;a.innerHTML=art.innerHTML;box.appendChild(a)})}).catch(function(){})});
+    }
+    if(location.protocol!=='file:'){setTimeout(load,1500)}
+    window.addEventListener('beforeprint',function(){
+      // expand everything collapsed and render the mobile directions list for print
+      document.querySelectorAll('.wcard').forEach(function(c){c.classList.add('open')});
+    });
+  })();
+  // copy email
+  (function(){var b=document.getElementById('copyMail');if(!b)return;b.addEventListener('click',function(){var t=document.getElementById('mailAddr').textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('mailAddr'));var s=window.getSelection();s.removeAllRanges();s.addRange(r)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){b.dataset.done='1';b.querySelectorAll('span').forEach(function(x){x.textContent=x.className==='uk'?'Скопійовано':'Copied'})},sel)}else sel()})})();
+
+  document.getElementById('y').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
